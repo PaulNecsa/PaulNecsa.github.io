@@ -1,4 +1,4 @@
-# Site personal de doctorat — „Metrology Console"
+# PhD journey website
 
 Site static (HTML/CSS/JS pur, fără dependențe de build) pentru diseminarea activității de
 cercetare: publicații, postere, proiecte/cod Python, video-uri și o pagină de linkuri tip
