@@ -1,4 +1,4 @@
-# PhD journey website
+# Site personal de doctorat — „Metrology Console"
 
 Site static (HTML/CSS/JS pur, fără dependențe de build) pentru diseminarea activității de
 cercetare: publicații, postere, proiecte/cod Python, video-uri și o pagină de linkuri tip
@@ -30,7 +30,7 @@ Website/
 
 Deschide `index.html` și `links.html` și caută `TODO` — vei găsi toate locurile de completat:
 
-1. **Numele** — înlocuiește „Your Name" peste tot (inclusiv în `<title>`, meta og:title și JSON-LD).
+1. **Numele** — REZOLVAT: „Paul Necsa" e completat peste tot (title, og:title, JSON-LD, footer).
 2. **Inițialele** — înlocuiește „YN" (logo navbar + avatar).
 3. **Linkurile de profil** — ORCID, Google Scholar, ResearchGate, LinkedIn, GitHub, YouTube:
    înlocuiește fiecare `href="#"` cu linkul real. ORCID se afișează ca URL complet
@@ -43,7 +43,7 @@ Deschide `index.html` și `links.html` și caută `TODO` — vei găsi toate loc
    a primei pagini), pune-l în `assets/img/`, apoi actualizează cardul din secțiunea Posters.
 7. **Video-urile** — înlocuiește `VIDEO_ID_1` cu ID-ul clipului YouTube (partea de după
    `watch?v=` din URL). Playerul se încarcă doar la click (pagina rămâne rapidă).
-8. **După publicare** — înlocuiește `YOUR-USERNAME.github.io` în: `index.html` (canonical,
+8. **După publicare** — înlocuiește `paulnecsa.github.io` în: `index.html` (canonical,
    og:url, og:image, JSON-LD), `links.html`, `robots.txt`, `sitemap.xml`.
 
 > Poți cere oricând asistentului Claude: „completează site-ul cu datele mele" — furnizând
@@ -53,14 +53,14 @@ Deschide `index.html` și `links.html` și caută `TODO` — vei găsi toate loc
 
 1. Creează cont pe https://github.com (dacă nu ai). **Activează 2FA** din Settings →
    Password and authentication — aceasta e principala măsură de securitate a site-ului.
-2. Creează un repository nou, numit exact: `NUMELE-TAU-DE-UTILIZATOR.github.io`
+2. Creează un repository nou, numit exact: `paulnecsa.github.io`
    (public, fără README inițial).
 3. Încarcă fișierele: pe pagina repo-ului → „uploading an existing file" → trage TOT
    conținutul folderului `Website` (inclusiv folderul `assets`) → „Commit changes".
    - Limita la upload prin browser e 25 MB/fișier; pentru postere PDF mai mari,
      folosește aplicația GitHub Desktop (gratuită) — limita urcă la 100 MB/fișier.
 4. Repo → Settings → Pages → Source: „Deploy from a branch" → Branch: `main`, folder `/ (root)` → Save.
-5. În 1–3 minute site-ul e live la `https://NUMELE-TAU.github.io`. Orice modificare
+5. În 1–3 minute site-ul e live la `https://paulnecsa.github.io`. Orice modificare
    ulterioară = încarci din nou fișierul modificat (sau folosești GitHub Desktop).
 
 ### Domeniu propriu (opțional, mai târziu)
