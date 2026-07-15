@@ -72,13 +72,34 @@ Un domeniu `.com` costă ~10,44 $/an (Cloudflare Registrar, preț verificat 2026
 - **Brevetele** (Goodyear US3,633 + cele 12) sunt documente în domeniul public; linkurile
   de pagină + PDF duc la Google Patents (verificate iul. 2026). Dacă vrei copii self-hosted,
   descarcă PDF-urile și pune-le în `assets/patents/`, apoi schimbă linkurile butoanelor „PDF".
-- **Diagramele** din secțiunea Fundamentals sunt SVG-uri originale desenate direct în pagină
-  (temă-aware, se adaptează dark/light). Sursa editabilă: `assets/diagrams/polymer-diagrams.drawio`
-  — o deschizi pe https://app.diagrams.net (File → Open from → Device). După editare poți
-  exporta SVG și înlocui figura din `knowledge.html`.
+- **Diagramele** din secțiunea Fundamentals sunt SVG-uri originale desenate direct în pagină,
+  în stil de desen tehnic (secțiune hașurată, repere numerotate cu balon + legendă, linii de
+  axă, cote cu linii de extensie), temă-aware (se adaptează dark/light) — verificate vizual
+  prin randare (iul. 2026). Pentru modificări: (a) îi ceri asistentului Claude modificarea
+  direct în `knowledge.html`; (b) editezi versiunile simplificate din
+  `assets/diagrams/polymer-diagrams.drawio` pe https://app.diagrams.net și exporți SVG;
+  (c) editezi SVG-ul cu Inkscape (gratuit).
 - **Referințele [1]–[7]** au DOI/ISBN verificate prin Crossref/edituri (iul. 2026). Nu adăuga
   referințe fără DOI/ISBN verificat.
 - **Politica de surse** e afișată pe pagină: fără Wikipedia; doar surse primare/autoritative.
+
+## 2c. Counterul de vizitatori (GoatCounter)
+
+Footerul afișează „twin.telemetry — visits: N · cookie-free". Numărul vine de la
+**GoatCounter** (gratuit, open-source, fără cookie-uri, fără banner GDPR).
+
+- **Activare (o singură dată):** creezi cont pe https://www.goatcounter.com/signup
+  cu codul EXACT `paulnecsa` (site-ul e legat de https://paulnecsa.goatcounter.com/count).
+  Apoi, în GoatCounter: Settings → bifează **„Allow adding visitor counts on your website"**
+  (altfel numărul public nu se încarcă și footerul afișează elegant „online").
+  Pentru export detaliat: Settings → activează **„Individual pageviews"**.
+- **Dashboard:** https://paulnecsa.goatcounter.com (login cu emailul tău) — vizite pe zile,
+  pagini, țări, referreri, browsere.
+- **Export:** Settings → Export → CSV (se deschide direct în Excel; conține afișările
+  individuale, inclusiv data și locația). Statisticile se actualizează la ~10 s;
+  numărul public e cache-uit până la 4 h.
+- Dacă codul `paulnecsa` e deja ocupat la înscriere: alege altul și cere asistentului
+  Claude să înlocuiască `paulnecsa.goatcounter.com` în cele 4 pagini + main.js.
 
 ## 3. Drepturi de autor la PDF-uri (important!)
 

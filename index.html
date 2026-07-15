@@ -38,7 +38,7 @@
     "@type": "Person",
     "name": "Paul Necsa",
     "jobTitle": "PhD Student / Researcher",
-    "affiliation": { "@type": "Organization", "name": "Your University" },
+    "affiliation": { "@type": "Organization", "name": "Politehnica University of Timișoara" },
     "url": "https://paulnecsa.github.io/",
     "sameAs": [
       "https://orcid.org/0000-0000-0000-0000",
@@ -56,7 +56,7 @@
 
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a class="brand" href="#top">PN<span class="cursor">_</span></a> <!-- TODO: inițialele tale -->
+      <a class="brand" href="#top">~/paulnecsa<span class="cursor">_</span></a> <!-- TODO: inițialele tale -->
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
@@ -84,7 +84,13 @@
       <div class="container hero-inner">
         <div>
           <p class="terminal-line"><span id="typeTarget"></span><span class="terminal-caret" aria-hidden="true"></span></p>
-          <h1>Paul Necsa</h1> <!-- TODO: numele tău -->
+          <div class="dt-name">
+            <h1>Paul Necsa</h1>
+            <div class="dt-live" aria-hidden="true">
+              <canvas id="twinCanvas" width="640" height="168"></canvas>
+              <div class="dt-sync"><span class="dt-dot"></span><span id="twinStatus">twin.init — sampling physical asset…</span></div>
+            </div>
+          </div>
           <p class="subtitle">
             PhD researcher in <strong>industrial engineering</strong> — injection molding of
             technical polymers, additive manufacturing (MEX/FDM) and dimensional metrology
@@ -121,22 +127,27 @@
             </g>
             <line class="scanline" x1="24" y1="58" x2="436" y2="58" stroke="var(--accent)" stroke-width="1" opacity="0.6"/>
             <text x="28" y="44" font-family="var(--font-mono)" font-size="10" fill="var(--text-3)">specimen: tensile · technical polymer</text>
+            <line x1="48" y1="150" x2="412" y2="150" stroke="var(--text-3)" stroke-width="0.8" stroke-dasharray="14 4 3 4" opacity="0.7"/>
             <path d="M 60 105 L 150 105 C 185 105 172 135 200 135 L 260 135 C 288 135 275 105 310 105 L 400 105 L 400 195 L 310 195 C 275 195 288 165 260 165 L 200 165 C 172 165 185 195 150 195 L 60 195 Z"
                   fill="none" stroke="var(--accent)" stroke-width="1.6" opacity="0.95"/>
-            <path d="M 60 105 L 74 93 L 414 93 L 400 105 M 414 93 L 414 183 L 400 195"
-                  fill="none" stroke="var(--accent)" stroke-width="0.9" opacity="0.35"/>
-            <g stroke="var(--accent-2)" stroke-width="1">
-              <line x1="60" y1="215" x2="60" y2="237"/><line x1="400" y1="215" x2="400" y2="237"/>
-              <line x1="60" y1="230" x2="192" y2="230"/><line x1="268" y1="230" x2="400" y2="230"/>
-              <path d="M60 230 l9 -3.5 v7 z" fill="var(--accent-2)"/><path d="M400 230 l-9 -3.5 v7 z" fill="var(--accent-2)"/>
-              <line x1="418" y1="135" x2="440" y2="135"/><line x1="418" y1="165" x2="440" y2="165"/>
-              <line x1="432" y1="135" x2="432" y2="165"/>
-              <path d="M432 135 l-3.5 9 h7 z" fill="var(--accent-2)"/><path d="M432 165 l-3.5 -9 h7 z" fill="var(--accent-2)"/>
+            <g stroke="var(--accent-2)" stroke-width="0.9">
+              <line x1="60" y1="199" x2="60" y2="237"/><line x1="400" y1="199" x2="400" y2="237"/>
             </g>
-            <text x="230" y="234" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--accent-2)">L 170.00 ±0.20</text>
-            <text x="430" y="126" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--accent-2)">10.00 ±0.05</text>
+            <line x1="70" y1="231" x2="390" y2="231" stroke="var(--accent-2)" stroke-width="1.1"/>
+            <g fill="var(--accent-2)">
+              <polygon points="60,231 70,227.5 70,234.5"/><polygon points="400,231 390,227.5 390,234.5"/>
+            </g>
+            <text x="230" y="225" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--accent-2)">170 ±0.2</text>
+            <g stroke="var(--accent-2)" stroke-width="1.1">
+              <line x1="230" y1="121" x2="230" y2="133"/><line x1="230" y1="167" x2="230" y2="179"/>
+              <line x1="230" y1="137" x2="230" y2="163" stroke-width="0.8"/>
+            </g>
+            <g fill="var(--accent-2)">
+              <polygon points="230,135 226.5,126 233.5,126"/><polygon points="230,165 226.5,174 233.5,174"/>
+            </g>
+            <text x="230" y="117" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--accent-2)">10 ±0.05</text>
             <g fill="none" stroke="var(--accent-2)" stroke-width="1.1">
-              <circle cx="230" cy="135" r="6"/><line x1="230" y1="124" x2="230" y2="146"/><line x1="219" y1="135" x2="241" y2="135"/>
+              <circle cx="250" cy="165" r="6"/><line x1="250" y1="154" x2="250" y2="176"/><line x1="239" y1="165" x2="261" y2="165"/>
               <circle cx="110" cy="195" r="6"/><line x1="110" y1="184" x2="110" y2="206"/><line x1="99" y1="195" x2="121" y2="195"/>
             </g>
             <g stroke="var(--accent)" fill="none" stroke-width="1.4">
@@ -145,7 +156,8 @@
               <line x1="318" y1="26" x2="342" y2="26"/>
             </g>
             <circle cx="330" cy="105" r="2.4" fill="var(--accent-2)"/>
-            <text x="344" y="60" font-family="var(--font-mono)" font-size="9.5" fill="var(--text-3)">CMM probe</text>
+            <text x="348" y="74" font-family="var(--font-mono)" font-size="9.5" fill="var(--text-3)">CMM probe</text>
+            <text x="28" y="272" font-family="var(--font-mono)" font-size="9" fill="var(--text-3)">* all dimensions in mm</text>
             <text x="28" y="290" font-family="var(--font-mono)" font-size="10" fill="var(--text-3)">&gt; dim.check — 3 pts probed · status: <tspan fill="var(--accent)">PASS</tspan></text>
             <text x="436" y="290" text-anchor="end" font-family="var(--font-mono)" font-size="9" fill="var(--text-3)">metrology console v1.0</text>
           </svg>
@@ -164,41 +176,46 @@
           <div class="about-text reveal">
             <!-- TODO: adaptează bio-ul — 3 paragrafe scurte sunt suficiente -->
             <p>
-              I am a PhD student in industrial engineering, researching how
-              <span class="highlight">injection molding of technical polymers</span> and
-              <span class="highlight">additive manufacturing</span> can be optimized through
+              I am a PhD student in industrial engineering at Politehnica University of
+              Timișoara, working at the intersection of
+              <span class="highlight">injection molding of technical polymers</span>,
+              <span class="highlight">additive manufacturing</span> and
               <span class="highlight">dimensional metrology</span> — coordinate measuring
-              machines (CMM), 3D scanning and statistical methods such as design of
-              experiments (DoE).
+              machines (CMM), 3D scanning and design of experiments (DoE).
             </p>
             <p>
-              My work sits at the intersection of polymer processing, precision measurement
-              and Industry 4.0: closing the loop between how parts are made and how
-              accurately they match their intended geometry.
+              My research asks a simple question with an expensive answer: why should the
+              dimensional accuracy of an injection-molded part depend on years of operator
+              experience? I am developing a
+              <span class="highlight">measurement-driven, mathematical route to dimensional
+              optimization</span> — a workflow meant to take a newcomer from first shot to
+              in-tolerance parts, guided by data and models instead of trial and error.
             </p>
             <p>
-              This site is where I share that journey — peer-reviewed articles, conference
-              posters, teaching materials, and (soon) open-source Python tools and
-              interactive apps developed during my research.
+              The method itself will be disclosed the proper way — through peer-reviewed
+              publications (in preparation). This site documents the journey: articles,
+              conference posters, teaching materials and, soon, open-source Python tools
+              developed along the way.
             </p>
 
             <h3 style="margin-top:34px; font-size:1.05rem;">Latest updates</h3>
             <ul class="news-list" style="margin-top:14px;">
-              <!-- TODO: înlocuiește cu noutățile tale reale (păstrează formatul) -->
-              <li><span class="date">2026-07</span> Website launched — publications and posters coming online.</li>
-              <li><span class="date">2026-06</span> [Placeholder] Poster presented at an international conference.</li>
-              <li><span class="date">2026-05</span> [Placeholder] New article submitted for review.</li>
+              <!-- Adaugă noutăți noi DEASUPRA, păstrând formatul <li> -->
+              <li><span class="date">2026-07</span> Knowledge Hub published — from Goodyear's 1844 vulcanization patent to PEEK and FDM, plus the free PhD tools guide.</li>
+              <li><span class="date">2026-07</span> Website launched. Publications and conference posters are in the pipeline.</li>
             </ul>
           </div>
 
           <aside class="id-card reveal" aria-label="Researcher profile summary">
-            <div class="avatar">PN</div> <!-- TODO: inițialele tale sau <img> cu o fotografie -->
+            <!-- Poza ta: salvează o fotografie (ideal pătrată) ca assets/img/profile.jpg
+                 Dacă fișierul lipsește, se afișează automat inițialele. -->
+            <div class="avatar">PN<img src="assets/img/profile.jpg" alt="Paul Necsa" onerror="this.remove()"></div>
             <h3>Paul Necsa</h3>
             <p class="role">PhD Student · Industrial Engineering</p>
             <ul>
-              <li><span class="k">affiliation</span> <span class="v">Your University</span></li> <!-- TODO -->
+              <li><span class="k">affiliation</span> <span class="v">Politehnica University of Timișoara (UPT)</span></li>
               <li><span class="k">focus</span> <span class="v">Polymer processing &amp; 3D metrology</span></li>
-              <li><span class="k">orcid</span> <span class="v">0000-0000-0000-0000</span></li> <!-- TODO -->
+              <li><span class="k">orcid</span> <span class="v">not yet available</span></li>
               <li><span class="k">status</span> <span class="v">Open to collaboration</span></li>
             </ul>
           </aside>
@@ -255,70 +272,55 @@
         <div class="pub-group reveal">
           <h3>Journal articles</h3>
 
-          <!-- ═══ ȘABLON PUBLICAȚIE — copiază blocul <article> și completează ═══
-               ATENȚIE: intrările de mai jos sunt EXEMPLE-ȘABLON, nu publicații reale. -->
+          <div class="coming-soon">
+            <span class="cs-accent">&gt; status:</span> first journal articles in preparation — coming soon<span class="terminal-caret" aria-hidden="true"></span>
+          </div>
+          <!-- ȘABLON PUBLICAȚIE (decomentează și completează când apare primul articol):
           <article class="pub">
             <div class="year">2026</div>
             <div>
-              <h4>[Example entry — replace with your article title]</h4>
-              <p class="authors">Paul Necsa, Co-Author A., Co-Author B.</p>
+              <h4>Titlul articolului</h4>
+              <p class="authors">Paul Necsa, Co-Author A.</p>
               <p class="venue">Journal Name, vol. X, article no. XXXX</p>
               <div class="pub-actions">
-                <a class="pub-btn" href="https://doi.org/10.XXXX/replace-me">DOI</a>
+                <a class="pub-btn" href="https://doi.org/10.XXXX/inlocuieste">DOI</a>
                 <a class="pub-btn" href="#">PDF</a>
                 <button class="pub-btn bibtex-toggle" type="button">BibTeX</button>
               </div>
               <details>
                 <summary>BibTeX</summary>
-                <pre>@article{necsa2026example,
+                <pre>@article{necsa2026,
   author  = {Paul Necsa and Co-Author, A.},
-  title   = {Example entry — replace with your article title},
+  title   = {Titlul articolului},
   journal = {Journal Name},
   year    = {2026},
-  doi     = {10.XXXX/replace-me}
+  doi     = {10.XXXX/inlocuieste}
 }</pre>
               </details>
             </div>
           </article>
-
-          <article class="pub">
-            <div class="year">2025</div>
-            <div>
-              <h4>[Example entry — replace with your article title]</h4>
-              <p class="authors">Paul Necsa, Co-Author C.</p>
-              <p class="venue">Journal Name, vol. Y, pp. 1–15</p>
-              <div class="pub-actions">
-                <a class="pub-btn" href="https://doi.org/10.XXXX/replace-me">DOI</a>
-                <button class="pub-btn bibtex-toggle" type="button">BibTeX</button>
-              </div>
-              <details>
-                <summary>BibTeX</summary>
-                <pre>@article{necsa2025example,
-  author  = {Paul Necsa and Co-Author, C.},
-  title   = {Example entry — replace with your article title},
-  journal = {Journal Name},
-  year    = {2025},
-  doi     = {10.XXXX/replace-me}
-}</pre>
-              </details>
-            </div>
-          </article>
+          -->
         </div>
 
         <div class="pub-group reveal">
           <h3>Conference papers &amp; posters</h3>
+          <div class="coming-soon">
+            <span class="cs-accent">&gt; status:</span> conference contributions queued — coming soon<span class="terminal-caret" aria-hidden="true"></span>
+          </div>
+          <!-- ȘABLON LUCRARE DE CONFERINȚĂ (decomentează și completează):
           <article class="pub">
-            <div class="year">2025</div>
+            <div class="year">2026</div>
             <div>
-              <h4>[Example entry — replace with your conference paper title]</h4>
+              <h4>Titlul lucrării</h4>
               <p class="authors">Paul Necsa, Co-Author D.</p>
-              <p class="venue">Proceedings of an International Conference, City, Country</p>
+              <p class="venue">Proceedings of ..., City, Country</p>
               <div class="pub-actions">
-                <a class="pub-btn" href="https://doi.org/10.XXXX/replace-me">DOI</a>
+                <a class="pub-btn" href="https://doi.org/10.XXXX/inlocuieste">DOI</a>
                 <a class="pub-btn" href="#posters">Poster</a>
               </div>
             </div>
           </article>
+          -->
         </div>
 
         <!-- ═══════════ POSTERS ═══════════ -->
@@ -326,25 +328,22 @@
           <p class="section-kicker">03b · Posters</p>
           <h2>Conference posters</h2>
         </div>
-        <div class="poster-grid reveal">
-          <!-- ȘABLON POSTER: pune PDF-ul în assets/posters/ și un thumbnail PNG/JPG în assets/img/ -->
-          <div class="poster">
-            <div class="thumb"><img src="assets/img/poster-placeholder-1.png" alt="Poster preview — placeholder" loading="lazy"></div>
-            <div class="meta">
-              <h4>[Poster title — replace]</h4>
-              <p class="conf">Conference name · 2025</p>
-              <a href="#">Download PDF <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+        <div class="reveal">
+          <div class="coming-soon">
+            <span class="cs-accent">&gt; status:</span> posters from upcoming conferences will be exhibited here<span class="terminal-caret" aria-hidden="true"></span>
+          </div>
+          <!-- ȘABLON POSTER (decomentează; pune PDF-ul în assets/posters/ și thumbnail-ul PNG în assets/img/):
+          <div class="poster-grid">
+            <div class="poster">
+              <div class="thumb"><img src="assets/img/poster-1.png" alt="Poster preview" loading="lazy"></div>
+              <div class="meta">
+                <h4>Titlul posterului</h4>
+                <p class="conf">Conference name · 2026</p>
+                <a href="assets/posters/poster-1.pdf">Download PDF <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
-          <div class="poster">
-            <div class="thumb"><img src="assets/img/poster-placeholder-2.png" alt="Poster preview — placeholder" loading="lazy"></div>
-            <div class="meta">
-              <h4>[Poster title — replace]</h4>
-              <p class="conf">Conference name · 2026</p>
-              <a href="#">Download PDF <i class="fa-solid fa-download" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
+          -->
       </div>
     </section>
 
@@ -395,22 +394,21 @@
           <p class="section-kicker">05 · Videos</p>
           <h2>Talks &amp; demonstrations</h2>
         </div>
-        <div class="video-grid reveal">
-          <!-- ȘABLON VIDEO: înlocuiește VIDEO_ID_1 cu ID-ul clipului tău de YouTube
-               (partea de după „watch?v=" din URL). Fațada încarcă playerul doar la click — pagină rapidă. -->
-          <div>
-            <div class="video-facade" data-video-id="VIDEO_ID_1" role="button" tabindex="0" aria-label="Play video">
-              <div class="play-btn"><i class="fa-solid fa-play" aria-hidden="true"></i></div>
-            </div>
-            <p class="video-title">[Video title — replace] · YouTube</p>
+        <div class="reveal">
+          <div class="coming-soon">
+            <span class="cs-accent">&gt; status:</span> talks &amp; demonstrations are being recorded — coming soon<span class="terminal-caret" aria-hidden="true"></span>
           </div>
-          <div>
-            <div class="video-facade" data-video-id="VIDEO_ID_2" role="button" tabindex="0" aria-label="Play video">
-              <div class="play-btn"><i class="fa-solid fa-play" aria-hidden="true"></i></div>
+          <!-- ȘABLON VIDEO (decomentează; înlocuiește VIDEO_ID cu ID-ul de pe YouTube — partea de după „watch?v=").
+               Fațada încarcă playerul doar la click, pagina rămâne rapidă.
+          <div class="video-grid">
+            <div>
+              <div class="video-facade" data-video-id="VIDEO_ID" role="button" tabindex="0" aria-label="Play video">
+                <div class="play-btn"><i class="fa-solid fa-play" aria-hidden="true"></i></div>
+              </div>
+              <p class="video-title">Titlul clipului · YouTube</p>
             </div>
-            <p class="video-title">[Video title — replace] · YouTube</p>
           </div>
-        </div>
+          -->
       </div>
     </section>
 
@@ -424,8 +422,7 @@
             Questions about my research, collaboration proposals or requests for
             materials — I answer email.
           </p>
-          <!-- TODO: adresa ta de email instituțională -->
-          <a class="email" href="mailto:your.name@university.edu">your.name@university.edu</a>
+          <a class="email" href="mailto:paul.necsa@student.upt.ro">paul.necsa@student.upt.ro</a>
           <div class="hero-social" style="justify-content:center;">
             <a href="#" aria-label="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>
             <a href="#" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
@@ -442,6 +439,7 @@
   <footer>
     <div class="container footer-inner">
       <p>© <span id="year">2026</span> Paul Necsa · Built for open science.</p>
+      <p class="telemetry"><span class="dt-dot" aria-hidden="true"></span>twin.telemetry — visits: <span id="gcCount">…</span> · cookie-free</p>
       <div class="foot-links">
         <a href="links.html">Links</a>
         <a href="#top">Back to top ↑</a>
@@ -450,5 +448,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script data-goatcounter="https://paulnecsa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

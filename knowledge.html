@@ -22,7 +22,7 @@
 
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a class="brand" href="index.html">PN<span class="cursor">_</span></a> <!-- TODO: inițialele tale -->
+      <a class="brand" href="index.html">~/paulnecsa<span class="cursor">_</span></a> <!-- TODO: inițialele tale -->
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#research">Research</a></li>
@@ -217,56 +217,106 @@
 
         <!-- FIG 1: Injection molding machine -->
         <figure class="figure-block">
-          <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic of an injection molding machine with hopper, reciprocating screw, heater bands, nozzle, mold and clamping unit">
-            <text x="20" y="28" font-family="var(--font-mono)" font-size="12" fill="var(--text-3)">fig. 1 — injection molding machine (schematic)</text>
-            <polygon points="150,70 214,70 196,140 168,140" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
-            <circle cx="176" cy="100" r="2.2" fill="var(--accent)"/><circle cx="188" cy="112" r="2.2" fill="var(--accent)"/><circle cx="181" cy="124" r="2.2" fill="var(--accent)"/><circle cx="193" cy="92" r="2.2" fill="var(--accent)"/>
-            <rect x="120" y="140" width="384" height="54" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.8"/>
-            <line x1="126" y1="167" x2="470" y2="167" stroke="var(--accent)" stroke-width="2.4" opacity="0.85"/>
-            <g stroke="var(--accent)" stroke-width="1.2" opacity="0.75">
-              <line x1="140" y1="146" x2="168" y2="188"/><line x1="168" y1="146" x2="196" y2="188"/><line x1="196" y1="146" x2="224" y2="188"/><line x1="224" y1="146" x2="252" y2="188"/><line x1="252" y1="146" x2="280" y2="188"/><line x1="280" y1="146" x2="308" y2="188"/><line x1="308" y1="146" x2="336" y2="188"/><line x1="336" y1="146" x2="364" y2="188"/><line x1="364" y1="146" x2="392" y2="188"/><line x1="392" y1="146" x2="420" y2="188"/><line x1="420" y1="146" x2="448" y2="188"/>
+          <svg viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Longitudinal section of an injection molding machine with numbered parts legend">
+            <defs>
+              <pattern id="f1ha" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="7" stroke="var(--text-3)" stroke-width="0.7" opacity="0.65"/></pattern>
+              <pattern id="f1hb" width="7" height="7" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="7" stroke="var(--text-3)" stroke-width="0.7" opacity="0.65"/></pattern>
+            </defs>
+            <text x="20" y="26" font-family="var(--font-mono)" font-size="12" fill="var(--text-3)">fig. 1 — injection molding machine · longitudinal section (schematic, not to scale)</text>
+            <line x1="60" y1="200" x2="852" y2="200" stroke="var(--text-3)" stroke-width="0.9" stroke-dasharray="16 4 3 4" opacity="0.8"/>
+            <polygon points="185,70 255,70 233,160 207,160" fill="none" stroke="var(--text)" stroke-width="1.8"/>
+            <g fill="var(--text-3)">
+              <circle cx="207" cy="96" r="2.1"/><circle cx="222" cy="110" r="2.1"/><circle cx="234" cy="92" r="2.1"/><circle cx="216" cy="130" r="2.1"/><circle cx="228" cy="144" r="2.1"/>
             </g>
-            <g fill="none" stroke="var(--accent-2)" stroke-width="1.6">
-              <rect x="286" y="134" width="16" height="66" rx="2"/><rect x="336" y="134" width="16" height="66" rx="2"/><rect x="386" y="134" width="16" height="66" rx="2"/><rect x="436" y="134" width="16" height="66" rx="2"/>
+            <rect x="150" y="160" width="57" height="12" fill="url(#f1ha)" stroke="var(--text)" stroke-width="1.6"/>
+            <rect x="233" y="160" width="267" height="12" fill="url(#f1ha)" stroke="var(--text)" stroke-width="1.6"/>
+            <rect x="150" y="228" width="350" height="12" fill="url(#f1ha)" stroke="var(--text)" stroke-width="1.6"/>
+            <line x1="150" y1="160" x2="150" y2="240" stroke="var(--text)" stroke-width="1.6"/>
+            <polygon points="157,192 350,187 468,181 468,219 350,213 157,208" fill="none" stroke="var(--text)" stroke-width="1.5"/>
+            <g stroke="var(--text-2)" stroke-width="1.1">
+              <line x1="170" y1="173" x2="186" y2="227"/><line x1="200" y1="173" x2="216" y2="227"/><line x1="230" y1="173" x2="246" y2="227"/><line x1="260" y1="173" x2="276" y2="227"/><line x1="290" y1="173" x2="306" y2="227"/><line x1="320" y1="173" x2="336" y2="227"/><line x1="350" y1="173" x2="366" y2="227"/><line x1="380" y1="173" x2="396" y2="227"/><line x1="410" y1="173" x2="426" y2="227"/><line x1="437" y1="173" x2="453" y2="227"/>
             </g>
-            <polygon points="504,150 504,184 546,172 546,162" fill="none" stroke="var(--accent)" stroke-width="1.8"/>
-            <rect x="556" y="92" width="22" height="152" fill="none" stroke="var(--text-3)" stroke-width="1.8"/>
-            <rect x="578" y="112" width="46" height="112" fill="none" stroke="var(--text-2)" stroke-width="1.8"/>
-            <rect x="624" y="112" width="46" height="112" fill="none" stroke="var(--text-2)" stroke-width="1.8"/>
-            <rect x="670" y="92" width="22" height="152" fill="none" stroke="var(--text-3)" stroke-width="1.8"/>
-            <line x1="546" y1="167" x2="598" y2="167" stroke="var(--accent-2)" stroke-width="2"/>
-            <path d="M 610 152 h 18 v 8 h -8 v 16 h -8 v -16 h -8 v -8 z" fill="none" stroke="var(--accent-2)" stroke-width="1.6" transform="rotate(90 619 166)"/>
-            <line x1="624" y1="112" x2="624" y2="224" stroke="var(--accent-2)" stroke-width="1.2" stroke-dasharray="4 4"/>
-            <line x1="556" y1="100" x2="770" y2="100" stroke="var(--text-3)" stroke-width="2"/>
-            <line x1="556" y1="236" x2="770" y2="236" stroke="var(--text-3)" stroke-width="2"/>
-            <rect x="770" y="146" width="52" height="44" rx="4" fill="none" stroke="var(--text-2)" stroke-width="1.8"/>
-            <line x1="770" y1="168" x2="702" y2="168" stroke="var(--accent-2)" stroke-width="2.2"/>
-            <polygon points="702,168 714,162 714,174" fill="var(--accent-2)"/>
-            <g font-family="var(--font-mono)" font-size="11.5" fill="var(--text-2)">
-              <text x="118" y="62">hopper</text>
-              <text x="300" y="122" fill="var(--accent-2)">heater bands</text>
-              <text x="170" y="215">reciprocating screw</text>
-              <text x="470" y="135">nozzle</text>
-              <text x="560" y="262">fixed platen</text>
-              <text x="672" y="262" text-anchor="start">moving platen</text>
-              <text x="586" y="86">mold halves</text>
-              <text x="700" y="92" fill="var(--text-3)">tie bars</text>
-              <text x="826" y="140" text-anchor="end" fill="var(--accent-2)">clamping</text>
-              <text x="826" y="200" text-anchor="end" fill="var(--accent-2)">force</text>
-              <text x="632" y="246" fill="var(--accent-2)">cavity + part</text>
-              <text x="548" y="157" fill="var(--accent-2)" font-size="10">sprue</text>
+            <g fill="none" stroke="var(--text-2)" stroke-width="1.5">
+              <rect x="268" y="148" width="22" height="12"/><rect x="318" y="148" width="22" height="12"/><rect x="393" y="148" width="22" height="12"/><rect x="443" y="148" width="22" height="12"/>
+              <rect x="268" y="240" width="22" height="12"/><rect x="318" y="240" width="22" height="12"/><rect x="393" y="240" width="22" height="12"/><rect x="443" y="240" width="22" height="12"/>
             </g>
-            <g stroke="var(--border-strong)" stroke-width="1">
-              <line x1="120" y1="286" x2="504" y2="286"/><line x1="120" y1="280" x2="120" y2="292"/><line x1="504" y1="280" x2="504" y2="292"/>
-              <line x1="556" y1="286" x2="822" y2="286"/><line x1="556" y1="280" x2="556" y2="292"/><line x1="822" y1="280" x2="822" y2="292"/>
-              <line x1="250" y1="194" x2="250" y2="232"/><line x1="380" y1="194" x2="380" y2="232"/>
+            <path d="M500 160 L544 190 L544 210 L500 240" fill="none" stroke="var(--text)" stroke-width="1.8"/>
+            <line x1="544" y1="190" x2="558" y2="190" stroke="var(--text)" stroke-width="1.8"/>
+            <line x1="544" y1="210" x2="558" y2="210" stroke="var(--text)" stroke-width="1.8"/>
+            <rect x="558" y="110" width="82" height="180" fill="url(#f1ha)" stroke="var(--text)" stroke-width="1.8"/>
+            <rect x="640" y="110" width="82" height="180" fill="url(#f1hb)" stroke="var(--text)" stroke-width="1.8"/>
+            <polygon points="558,195 640,190 640,210 558,205" fill="var(--surface)" stroke="var(--text)" stroke-width="1.4"/>
+            <path d="M628 156 h24 v18 h-6 v52 h6 v18 h-24 v-18 h6 v-52 h-6 z" fill="var(--surface)" stroke="var(--text)" stroke-width="1.5"/>
+            <g fill="var(--surface)" stroke="var(--text-2)" stroke-width="1.3">
+              <circle cx="590" cy="140" r="6"/><circle cx="590" cy="260" r="6"/>
+              <circle cx="700" cy="140" r="6"/><circle cx="700" cy="260" r="6"/>
             </g>
-            <g font-family="var(--font-mono)" font-size="11" fill="var(--text-3)">
-              <text x="285" y="308" text-anchor="middle">injection unit</text>
-              <text x="689" y="308" text-anchor="middle">clamping unit</text>
-              <text x="182" y="230" text-anchor="middle" font-size="10">feed</text>
-              <text x="315" y="230" text-anchor="middle" font-size="10">compression</text>
-              <text x="442" y="230" text-anchor="middle" font-size="10">metering</text>
+            <g stroke="var(--text-3)" stroke-width="0.8">
+              <line x1="586" y1="140" x2="594" y2="140"/><line x1="590" y1="136" x2="590" y2="144"/>
+              <line x1="586" y1="260" x2="594" y2="260"/><line x1="590" y1="256" x2="590" y2="264"/>
+              <line x1="696" y1="140" x2="704" y2="140"/><line x1="700" y1="136" x2="700" y2="144"/>
+              <line x1="696" y1="260" x2="704" y2="260"/><line x1="700" y1="256" x2="700" y2="264"/>
+            </g>
+            <line x1="640" y1="102" x2="640" y2="298" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="7 4"/>
+            <rect x="722" y="100" width="20" height="200" fill="none" stroke="var(--text)" stroke-width="1.8"/>
+            <line x1="558" y1="106" x2="800" y2="106" stroke="var(--text-2)" stroke-width="2"/>
+            <line x1="558" y1="294" x2="800" y2="294" stroke="var(--text-2)" stroke-width="2"/>
+            <rect x="800" y="178" width="46" height="44" fill="none" stroke="var(--text)" stroke-width="1.8"/>
+            <line x1="800" y1="200" x2="756" y2="200" stroke="var(--text)" stroke-width="2.2"/>
+            <polygon points="742,200 756,194.5 756,205.5" fill="var(--text)"/>
+            <text x="823" y="170" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--text-2)">F clamp</text>
+            <line x1="505" y1="200" x2="608" y2="200" stroke="var(--accent)" stroke-width="1.8"/>
+            <polygon points="620,200 606,194.5 606,205.5" fill="var(--accent)"/>
+            <text x="540" y="188" font-family="var(--font-mono)" font-size="10" fill="var(--accent)">melt flow</text>
+            <g font-family="var(--font-mono)" font-size="12" fill="var(--text)">
+              <g fill="none" stroke="var(--text-2)" stroke-width="1">
+                <circle cx="152" cy="62" r="11"/><line x1="163" y1="66" x2="203" y2="86"/>
+                <circle cx="360" cy="120" r="11"/><line x1="360" y1="131" x2="365" y2="158"/>
+                <circle cx="300" cy="286" r="11"/><line x1="300" y1="275" x2="328" y2="252"/>
+                <circle cx="228" cy="286" r="11"/><line x1="232" y1="275" x2="252" y2="224"/>
+                <circle cx="516" cy="120" r="11"/><line x1="516" y1="131" x2="518" y2="172"/>
+                <circle cx="600" cy="76" r="11"/><line x1="600" y1="87" x2="599" y2="193"/>
+                <circle cx="668" cy="76" r="11"/><line x1="663" y1="86" x2="641" y2="154"/>
+                <circle cx="762" cy="258" r="11"/><line x1="751" y1="256" x2="706" y2="260"/>
+                <circle cx="762" cy="76" r="11"/><line x1="757" y1="86" x2="734" y2="118"/>
+              </g>
+              <g fill="var(--text-2)">
+                <circle cx="203" cy="86" r="1.8"/><circle cx="365" cy="158" r="1.8"/><circle cx="328" cy="252" r="1.8"/><circle cx="252" cy="224" r="1.8"/><circle cx="518" cy="172" r="1.8"/><circle cx="599" cy="193" r="1.8"/><circle cx="641" cy="154" r="1.8"/><circle cx="706" cy="260" r="1.8"/><circle cx="734" cy="118" r="1.8"/>
+              </g>
+              <text x="152" y="66" text-anchor="middle">1</text>
+              <text x="360" y="124" text-anchor="middle">2</text>
+              <text x="300" y="290" text-anchor="middle">3</text>
+              <text x="228" y="290" text-anchor="middle">4</text>
+              <text x="516" y="124" text-anchor="middle">5</text>
+              <text x="600" y="80" text-anchor="middle">6</text>
+              <text x="668" y="80" text-anchor="middle">7</text>
+              <text x="762" y="262" text-anchor="middle">8</text>
+              <text x="762" y="80" text-anchor="middle">9</text>
+            </g>
+            <g stroke="var(--text-3)" stroke-width="1">
+              <line x1="150" y1="322" x2="500" y2="322"/>
+              <line x1="150" y1="316" x2="150" y2="328"/><line x1="280" y1="316" x2="280" y2="328"/><line x1="400" y1="316" x2="400" y2="328"/><line x1="500" y1="316" x2="500" y2="328"/>
+            </g>
+            <g font-family="var(--font-mono)" font-size="10" fill="var(--text-3)">
+              <text x="215" y="340" text-anchor="middle">feed zone</text>
+              <text x="340" y="340" text-anchor="middle">compression</text>
+              <text x="450" y="340" text-anchor="middle">metering</text>
+              <text x="325" y="356" text-anchor="middle" font-style="italic">channel depth decreases → melt is sheared and homogenized</text>
+            </g>
+            <line x1="640" y1="298" x2="640" y2="316" stroke="var(--text-3)" stroke-width="0.8"/>
+            <text x="640" y="330" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-3)">parting line</text>
+            <g font-family="var(--font-mono)" font-size="11" fill="var(--text-2)">
+              <text x="70" y="398">1  hopper — feedstock pellets</text>
+              <text x="70" y="416">2  barrel (heated cylinder)</text>
+              <text x="70" y="434">3  heater bands</text>
+              <text x="70" y="452">4  reciprocating screw</text>
+              <text x="360" y="398">5  nozzle</text>
+              <text x="360" y="416">6  sprue</text>
+              <text x="360" y="434">7  cavity — molded part</text>
+              <text x="360" y="452">8  cooling channels</text>
+              <text x="620" y="398">9  moving platen</text>
+              <text x="620" y="416">—  tie bars (top/bottom)</text>
+              <text x="620" y="434">F  clamping force</text>
             </g>
           </svg>
           <figcaption>
@@ -282,42 +332,51 @@
 
         <!-- FIG 2: Polymer classification -->
         <figure class="figure-block">
-          <svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Classification tree of polymers: thermoplastics (amorphous and semi-crystalline), thermosets and elastomers, with examples">
-            <text x="20" y="28" font-family="var(--font-mono)" font-size="12" fill="var(--text-3)">fig. 2 — polymer classification (by thermo-mechanical behavior)</text>
-            <rect x="380" y="44" width="120" height="38" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
-            <text x="440" y="68" text-anchor="middle" font-family="var(--font-mono)" font-size="13" fill="var(--accent)">POLYMERS</text>
-            <g stroke="var(--border-strong)" stroke-width="1.4" fill="none">
-              <path d="M440 82 v20 M440 102 H190 M440 102 H700 M190 102 v28 M440 102 v28 M700 102 v28"/>
-              <path d="M190 202 v18 M190 220 H110 M190 220 H290 M110 220 v22 M290 220 v22"/>
+          <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Classification of polymers: thermoplastics with amorphous and semi-crystalline subclasses, thermosets and elastomers">
+            <text x="20" y="26" font-family="var(--font-mono)" font-size="12" fill="var(--text-3)">fig. 2 — polymer classification by thermo-mechanical behavior</text>
+            <rect x="370" y="48" width="160" height="40" fill="none" stroke="var(--text)" stroke-width="1.8"/>
+            <text x="450" y="73" text-anchor="middle" font-family="var(--font-mono)" font-size="13" fill="var(--text)">POLYMERS</text>
+            <g stroke="var(--text-2)" stroke-width="1.2" fill="none">
+              <line x1="450" y1="88" x2="450" y2="118"/>
+              <line x1="180" y1="118" x2="760" y2="118"/>
+              <line x1="180" y1="118" x2="180" y2="140"/>
+              <line x1="450" y1="118" x2="450" y2="140"/>
+              <line x1="760" y1="118" x2="760" y2="140"/>
+              <line x1="180" y1="204" x2="180" y2="222"/>
+              <line x1="105" y1="222" x2="275" y2="222"/>
+              <line x1="105" y1="222" x2="105" y2="240"/>
+              <line x1="275" y1="222" x2="275" y2="240"/>
             </g>
-            <rect x="110" y="130" width="160" height="72" rx="8" fill="none" stroke="var(--accent)" stroke-width="1.8"/>
-            <text x="190" y="156" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--accent)">THERMOPLASTICS</text>
-            <text x="190" y="176" text-anchor="middle" font-size="10.5" fill="var(--text-3)">soften on heating —</text>
-            <text x="190" y="190" text-anchor="middle" font-size="10.5" fill="var(--text-3)">remeltable, recyclable</text>
-            <rect x="360" y="130" width="160" height="72" rx="8" fill="none" stroke="var(--text-2)" stroke-width="1.8"/>
-            <text x="440" y="156" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--text)">THERMOSETS</text>
-            <text x="440" y="176" text-anchor="middle" font-size="10.5" fill="var(--text-3)">densely cross-linked —</text>
-            <text x="440" y="190" text-anchor="middle" font-size="10.5" fill="var(--text-3)">cannot be remelted</text>
-            <rect x="620" y="130" width="160" height="72" rx="8" fill="none" stroke="var(--accent-2)" stroke-width="1.8"/>
-            <text x="700" y="156" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--accent-2)">ELASTOMERS</text>
-            <text x="700" y="176" text-anchor="middle" font-size="10.5" fill="var(--text-3)">lightly cross-linked —</text>
-            <text x="700" y="190" text-anchor="middle" font-size="10.5" fill="var(--text-3)">large elastic strains</text>
-            <rect x="40" y="242" width="140" height="58" rx="8" fill="none" stroke="var(--border-strong)" stroke-width="1.5"/>
-            <text x="110" y="264" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--text)">amorphous</text>
-            <text x="110" y="282" text-anchor="middle" font-size="10.5" fill="var(--text-3)">only Tg · transparent</text>
-            <rect x="220" y="242" width="140" height="58" rx="8" fill="none" stroke="var(--border-strong)" stroke-width="1.5"/>
-            <text x="290" y="264" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--text)">semi-crystalline</text>
-            <text x="290" y="282" text-anchor="middle" font-size="10.5" fill="var(--text-3)">Tg + distinct Tm</text>
-            <g font-family="var(--font-mono)" font-size="11" fill="var(--text-2)">
-              <text x="110" y="326" text-anchor="middle">PC · PMMA · ABS · PS</text>
-              <text x="290" y="326" text-anchor="middle">PP · PE · PA · PET · PEEK</text>
-              <text x="440" y="326" text-anchor="middle">phenolics · epoxy · melamine</text>
-              <text x="700" y="326" text-anchor="middle">vulcanized rubber · silicones</text>
-            </g>
-            <text x="440" y="348" text-anchor="middle" font-size="10.5" fill="var(--text-3)">(phenolics = Bakelite, Baekeland 1909)</text>
-            <text x="700" y="348" text-anchor="middle" font-size="10.5" fill="var(--accent-2)">← Goodyear, 1844</text>
-            <path d="M270 166 C 320 108, 560 108, 618 162" fill="none" stroke="var(--accent-2)" stroke-width="1.2" stroke-dasharray="5 5"/>
-            <text x="444" y="112" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--accent-2)">TPE — thermoplastic elastomers</text>
+            <rect x="80" y="140" width="200" height="64" fill="none" stroke="var(--text-2)" stroke-width="1.6"/>
+            <text x="180" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--text)">THERMOPLASTICS</text>
+            <line x1="96" y1="172" x2="264" y2="172" stroke="var(--border-strong)" stroke-width="1"/>
+            <text x="180" y="188" text-anchor="middle" font-size="10" fill="var(--text-3)">soften on heating — remeltable,</text>
+            <text x="180" y="200" text-anchor="middle" font-size="10" fill="var(--text-3)">basis of molding &amp; extrusion</text>
+            <rect x="350" y="140" width="200" height="64" fill="none" stroke="var(--text-2)" stroke-width="1.6"/>
+            <text x="450" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--text)">THERMOSETS</text>
+            <line x1="366" y1="172" x2="534" y2="172" stroke="var(--border-strong)" stroke-width="1"/>
+            <text x="450" y="188" text-anchor="middle" font-size="10" fill="var(--text-3)">cure into a permanent network —</text>
+            <text x="450" y="200" text-anchor="middle" font-size="10" fill="var(--text-3)">cannot be remelted</text>
+            <rect x="660" y="140" width="200" height="64" fill="none" stroke="var(--text-2)" stroke-width="1.6"/>
+            <text x="760" y="162" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--text)">ELASTOMERS</text>
+            <line x1="676" y1="172" x2="844" y2="172" stroke="var(--border-strong)" stroke-width="1"/>
+            <text x="760" y="188" text-anchor="middle" font-size="10" fill="var(--text-3)">lightly cross-linked networks —</text>
+            <text x="760" y="200" text-anchor="middle" font-size="10" fill="var(--text-3)">large recoverable strains</text>
+            <rect x="30" y="240" width="150" height="96" fill="none" stroke="var(--text-2)" stroke-width="1.5"/>
+            <text x="105" y="262" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--text)">amorphous</text>
+            <line x1="44" y1="270" x2="166" y2="270" stroke="var(--border-strong)" stroke-width="1"/>
+            <text x="105" y="286" text-anchor="middle" font-size="9.5" fill="var(--text-3)">only Tg · transparent</text>
+            <text x="105" y="300" text-anchor="middle" font-size="9.5" fill="var(--text-3)">lower, isotropic shrinkage</text>
+            <text x="105" y="322" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-2)">PC · PMMA · ABS · PS</text>
+            <rect x="200" y="240" width="150" height="96" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <text x="275" y="262" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--text)">semi-crystalline</text>
+            <line x1="214" y1="270" x2="336" y2="270" stroke="var(--border-strong)" stroke-width="1"/>
+            <text x="275" y="286" text-anchor="middle" font-size="9.5" fill="var(--text-3)">Tg + distinct Tm</text>
+            <text x="275" y="300" text-anchor="middle" font-size="9.5" fill="var(--text-3)">higher, anisotropic shrinkage</text>
+            <text x="275" y="322" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-2)">PP · PE · PA · PET · PEEK</text>
+            <text x="352" y="250" font-family="var(--font-mono)" font-size="9" fill="var(--accent)">← research focus</text>
+            <text x="450" y="230" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-2)">phenolics · epoxy · melamine</text>
+            <text x="760" y="230" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-2)">vulcanized rubber · silicones</text>
           </svg>
           <figcaption>
             <strong>Fig. 2 — Polymer families.</strong> Thermoplastics soften and can be remelted
@@ -332,43 +391,73 @@
 
         <!-- FIG 3: Semi-crystalline structure & why it matters -->
         <figure class="figure-block">
-          <svg viewBox="0 0 880 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Semi-crystalline polymer microstructure with crystalline lamellae, amorphous regions and tie molecules, and thermal behavior with Tg and Tm">
-            <text x="20" y="28" font-family="var(--font-mono)" font-size="12" fill="var(--text-3)">fig. 3 — semi-crystalline microstructure &amp; thermal behavior</text>
-            <g stroke="var(--accent)" stroke-width="1.6">
-              <line x1="70" y1="70" x2="70" y2="130"/><line x1="82" y1="70" x2="82" y2="130"/><line x1="94" y1="70" x2="94" y2="130"/><line x1="106" y1="70" x2="106" y2="130"/><line x1="118" y1="70" x2="118" y2="130"/><line x1="130" y1="70" x2="130" y2="130"/>
-              <path d="M70 70 q6 -10 12 0 M94 70 q6 -10 12 0 M118 70 q6 -10 12 0 M82 130 q6 10 12 0 M106 130 q6 10 12 0" fill="none"/>
+          <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Semi-crystalline polymer microstructure sketch and thermal behavior axis with glass transition and melting temperatures">
+            <text x="20" y="26" font-family="var(--font-mono)" font-size="12" fill="var(--text-3)">fig. 3 — semi-crystalline microstructure (left) · thermal behavior (right)</text>
+            <rect x="40" y="62" width="360" height="238" fill="none" stroke="var(--text-2)" stroke-width="1.5"/>
+            <g transform="rotate(-14 130 120)" stroke="var(--accent)" stroke-width="1.6" fill="none">
+              <line x1="90" y1="96" x2="90" y2="144"/><line x1="98" y1="96" x2="98" y2="144"/><line x1="106" y1="96" x2="106" y2="144"/><line x1="114" y1="96" x2="114" y2="144"/><line x1="122" y1="96" x2="122" y2="144"/><line x1="130" y1="96" x2="130" y2="144"/><line x1="138" y1="96" x2="138" y2="144"/><line x1="146" y1="96" x2="146" y2="144"/><line x1="154" y1="96" x2="154" y2="144"/><line x1="162" y1="96" x2="162" y2="144"/>
+              <path d="M90 96 q4 -7 8 0 M106 96 q4 -7 8 0 M122 96 q4 -7 8 0 M138 96 q4 -7 8 0 M154 96 q4 -7 8 0"/>
+              <path d="M98 144 q4 7 8 0 M114 144 q4 7 8 0 M130 144 q4 7 8 0 M146 144 q4 7 8 0"/>
             </g>
-            <g stroke="var(--accent)" stroke-width="1.6">
-              <line x1="240" y1="160" x2="240" y2="220"/><line x1="252" y1="160" x2="252" y2="220"/><line x1="264" y1="160" x2="264" y2="220"/><line x1="276" y1="160" x2="276" y2="220"/><line x1="288" y1="160" x2="288" y2="220"/>
-              <path d="M240 160 q6 -10 12 0 M264 160 q6 -10 12 0 M252 220 q6 10 12 0 M276 220 q6 10 12 0" fill="none"/>
+            <g transform="rotate(18 290 210)" stroke="var(--accent)" stroke-width="1.6" fill="none">
+              <line x1="250" y1="186" x2="250" y2="234"/><line x1="258" y1="186" x2="258" y2="234"/><line x1="266" y1="186" x2="266" y2="234"/><line x1="274" y1="186" x2="274" y2="234"/><line x1="282" y1="186" x2="282" y2="234"/><line x1="290" y1="186" x2="290" y2="234"/><line x1="298" y1="186" x2="298" y2="234"/><line x1="306" y1="186" x2="306" y2="234"/>
+              <path d="M250 186 q4 -7 8 0 M266 186 q4 -7 8 0 M282 186 q4 -7 8 0 M298 186 q4 -7 8 0"/>
+              <path d="M258 234 q4 7 8 0 M274 234 q4 7 8 0 M290 234 q4 7 8 0"/>
             </g>
-            <path d="M135 100 C 170 90, 175 130, 205 120 S 250 100, 245 158" fill="none" stroke="var(--accent-2)" stroke-width="1.8"/>
-            <path d="M60 150 C 90 170, 120 145, 150 168 S 200 200, 225 185 M100 60 C 130 40, 160 70, 195 55 M300 90 C 330 110, 350 80, 380 100 S 400 140, 375 160" fill="none" stroke="var(--text-3)" stroke-width="1.3" opacity="0.8"/>
-            <g font-family="var(--font-mono)" font-size="11" fill="var(--text-2)">
-              <text x="60" y="55">crystalline lamellae</text>
-              <text x="60" y="248">amorphous regions (entangled coils)</text>
-              <text x="305" y="200" fill="var(--accent-2)">tie molecule</text>
+            <g transform="rotate(4 130 250)" stroke="var(--accent)" stroke-width="1.6" fill="none">
+              <line x1="86" y1="230" x2="86" y2="272"/><line x1="94" y1="230" x2="94" y2="272"/><line x1="102" y1="230" x2="102" y2="272"/><line x1="110" y1="230" x2="110" y2="272"/><line x1="118" y1="230" x2="118" y2="272"/><line x1="126" y1="230" x2="126" y2="272"/><line x1="134" y1="230" x2="134" y2="272"/>
+              <path d="M86 230 q4 -7 8 0 M102 230 q4 -7 8 0 M118 230 q4 -7 8 0"/>
+              <path d="M94 272 q4 7 8 0 M110 272 q4 7 8 0 M126 272 q4 7 8 0"/>
             </g>
-            <line x1="470" y1="210" x2="850" y2="210" stroke="var(--text-2)" stroke-width="1.6"/>
-            <polygon points="850,210 838,204 838,216" fill="var(--text-2)"/>
-            <text x="856" y="214" font-family="var(--font-mono)" font-size="11" fill="var(--text-3)" text-anchor="end"> </text>
-            <text x="845" y="232" font-family="var(--font-mono)" font-size="11" fill="var(--text-3)" text-anchor="end">temperature →</text>
-            <line x1="580" y1="200" x2="580" y2="220" stroke="var(--accent-2)" stroke-width="2"/>
-            <text x="580" y="240" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--accent-2)">Tg</text>
-            <line x1="760" y1="200" x2="760" y2="220" stroke="var(--accent-2)" stroke-width="2"/>
-            <text x="760" y="240" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--accent-2)">Tm</text>
-            <g font-family="var(--font-mono)" font-size="10.5">
-              <rect x="470" y="80" width="110" height="26" rx="4" fill="none" stroke="var(--border-strong)"/>
-              <rect x="580" y="80" width="270" height="26" rx="4" fill="none" stroke="var(--border-strong)" stroke-dasharray="4 3"/>
-              <text x="525" y="97" text-anchor="middle" fill="var(--text-2)">glassy</text>
-              <text x="715" y="97" text-anchor="middle" fill="var(--text-3)">rubbery → viscous melt</text>
-              <text x="470" y="70" fill="var(--text-3)">amorphous (e.g., PC):</text>
-              <rect x="470" y="130" width="290" height="26" rx="4" fill="none" stroke="var(--accent)"/>
-              <rect x="760" y="130" width="90" height="26" rx="4" fill="none" stroke="var(--border-strong)" stroke-dasharray="4 3"/>
-              <text x="615" y="147" text-anchor="middle" fill="var(--accent)">stiff: crystals + amorphous</text>
-              <text x="805" y="147" text-anchor="middle" fill="var(--text-3)">melt</text>
-              <text x="470" y="124" fill="var(--text-3)">semi-crystalline (e.g., PA 66):</text>
+            <g stroke="var(--text-3)" stroke-width="1.1" fill="none" opacity="0.9">
+              <path d="M60 90 C 90 70, 120 96, 150 78 S 210 66, 235 84"/>
+              <path d="M175 130 C 200 118, 214 146, 238 138 S 270 122, 262 158"/>
+              <path d="M60 190 C 92 206, 122 182, 150 202 S 196 224, 214 208"/>
+              <path d="M320 100 C 348 118, 366 88, 388 106 S 396 148, 372 158"/>
+              <path d="M150 250 C 180 262, 204 246, 228 262 S 262 276, 282 262"/>
+              <path d="M330 240 C 352 226, 372 250, 388 238"/>
             </g>
+            <path d="M160 118 C 200 128, 218 162, 252 196" fill="none" stroke="var(--text)" stroke-width="1.8"/>
+            <g font-family="var(--font-mono)" font-size="10.5" fill="var(--text-2)">
+              <line x1="120" y1="52" x2="120" y2="88" stroke="var(--text-3)" stroke-width="0.9"/>
+              <circle cx="120" cy="88" r="1.8" fill="var(--text-2)"/>
+              <text x="44" y="46">crystalline lamellae (folded chains)</text>
+              <line x1="110" y1="310" x2="178" y2="258" stroke="var(--text-3)" stroke-width="0.9"/>
+              <circle cx="178" cy="258" r="1.8" fill="var(--text-2)"/>
+              <text x="44" y="324">amorphous — entangled coils</text>
+              <line x1="300" y1="310" x2="216" y2="162" stroke="var(--text-3)" stroke-width="0.9"/>
+              <circle cx="216" cy="162" r="1.8" fill="var(--text-2)"/>
+              <text x="252" y="324">tie molecule</text>
+            </g>
+            <line x1="470" y1="242" x2="856" y2="242" stroke="var(--text)" stroke-width="1.6"/>
+            <polygon points="868,242 854,236.5 854,247.5" fill="var(--text)"/>
+            <text x="868" y="264" text-anchor="end" font-family="var(--font-mono)" font-size="10.5" fill="var(--text-3)">temperature</text>
+            <g stroke="var(--accent-2)" stroke-width="1.8">
+              <line x1="592" y1="234" x2="592" y2="250"/>
+              <line x1="764" y1="234" x2="764" y2="250"/>
+            </g>
+            <text x="592" y="268" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--accent-2)">Tg</text>
+            <text x="764" y="268" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--accent-2)">Tm</text>
+            <g stroke="var(--text-3)" stroke-width="0.8" stroke-dasharray="3 3">
+              <line x1="592" y1="196" x2="592" y2="234"/>
+              <line x1="764" y1="152" x2="764" y2="234"/>
+            </g>
+            <text x="470" y="140" font-family="var(--font-mono)" font-size="10.5" fill="var(--text-2)">semi-crystalline (PA, PP, PEEK):</text>
+            <line x1="470" y1="152" x2="764" y2="152" stroke="var(--text)" stroke-width="1.8"/>
+            <line x1="470" y1="147" x2="470" y2="157" stroke="var(--text)" stroke-width="1.4"/>
+            <line x1="764" y1="147" x2="764" y2="157" stroke="var(--text)" stroke-width="1.4"/>
+            <text x="614" y="166" text-anchor="middle" font-size="9.5" fill="var(--text-3)">stiff — crystals persist above Tg</text>
+            <line x1="764" y1="152" x2="850" y2="152" stroke="var(--text-3)" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <text x="808" y="144" text-anchor="middle" font-size="9.5" fill="var(--text-3)">melt</text>
+            <text x="470" y="184" font-family="var(--font-mono)" font-size="10.5" fill="var(--text-2)">amorphous (PC, PMMA):</text>
+            <line x1="470" y1="196" x2="592" y2="196" stroke="var(--text)" stroke-width="1.8"/>
+            <line x1="470" y1="191" x2="470" y2="201" stroke="var(--text)" stroke-width="1.4"/>
+            <line x1="592" y1="191" x2="592" y2="201" stroke="var(--text)" stroke-width="1.4"/>
+            <text x="531" y="210" text-anchor="middle" font-size="9.5" fill="var(--text-3)">glassy</text>
+            <line x1="592" y1="196" x2="850" y2="196" stroke="var(--text-3)" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <text x="720" y="210" text-anchor="middle" font-size="9.5" fill="var(--text-3)">rubbery → viscous (no Tm)</text>
+            <text x="470" y="308" font-family="var(--font-mono)" font-size="9.5" fill="var(--text-3)">on cooling below Tm, crystallization compacts the material →</text>
+            <text x="470" y="322" font-family="var(--font-mono)" font-size="9.5" fill="var(--text-3)">higher &amp; anisotropic shrinkage — the metrology problem</text>
           </svg>
           <figcaption>
             <strong>Fig. 3 — Why semi-crystalline polymers keep metrologists busy.</strong>
@@ -399,7 +488,7 @@
           <li>Rosato, D. V., Rosato, D. V., &amp; Rosato, M. G. (Eds.). (2000). <em>Injection molding handbook</em> (3rd ed.). Springer. <a href="https://doi.org/10.1007/978-1-4615-4597-2">https://doi.org/10.1007/978-1-4615-4597-2</a></li>
           <li>Fischer, J. M. (2013). <em>Handbook of molded part shrinkage and warpage</em> (2nd ed.). William Andrew / Elsevier. ISBN 978-1-4557-2597-7</li>
           <li>Annicchiarico, D., &amp; Alcock, J. R. (2014). Review of factors that affect shrinkage of molded part in injection molding. <em>Materials and Manufacturing Processes, 29</em>(6), 662–682. <a href="https://doi.org/10.1080/10426914.2014.880467">https://doi.org/10.1080/10426914.2014.880467</a></li>
-          <li>Zhao, N., Lian, J., Wang, P., &amp; Xu, Z. (2022). Recent progress in minimizing the warpage and shrinkage deformations by the optimization of process parameters in plastic injection molding: A review. <em>The International Journal of Advanced Manufacturing Technology, 120</em>, 85–101. <a href="https://doi.org/10.1007/s00170-022-08859-0">https://doi.org/10.1007/s00170-022-08859-0</a></li>
+          <li>Zhao, N., Lian, J., Wang, P., &amp; Xu, Z. (2022). Recent progress in minimizing the warpage and shrinkage deformations by the optimization of process parameters in plastic injection molding: A review. <em>The International Journal of Advanced Manufacturing Technology, 120</em>(1–2), 85–101. <a href="https://doi.org/10.1007/s00170-022-08859-0">https://doi.org/10.1007/s00170-022-08859-0</a></li>
         </ol>
       </div>
     </section>
@@ -440,6 +529,7 @@
   <footer>
     <div class="container footer-inner">
       <p>© <span id="year">2026</span> Paul Necsa · Built for open science.</p>
+      <p class="telemetry"><span class="dt-dot" aria-hidden="true"></span>twin.telemetry — visits: <span id="gcCount">…</span> · cookie-free</p>
       <div class="foot-links">
         <a href="index.html">Home</a>
         <a href="resources.html">Resources</a>
@@ -450,5 +540,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script data-goatcounter="https://paulnecsa.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
