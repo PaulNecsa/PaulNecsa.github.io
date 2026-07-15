@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free research tools — engineering PhD toolbox | Your Name</title>
+  <meta name="description" content="Curated free tools for an engineering PhD: injection molding simulation, FEM, 3D metrology (CMM, scan-vs-CAD), DoE and statistics, literature discovery, academic writing, polymer material databases. Verified July 2026.">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/resources.html"> <!-- TODO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free tools for an engineering PhD — curated & verified">
+  <meta property="og:description" content="70+ free tools: injection molding simulation, FEM, 3D metrology, DoE, literature discovery, academic writing. Verified July 2026.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/resources.html">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">YN<span class="cursor">_</span></a> <!-- TODO: inițialele tale -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="knowledge.html">Knowledge</a></li>
+        <li><a href="resources.html" aria-current="page">Resources</a></li>
+        <li><a class="nav-cta" href="links.html">Links</a></li>
+      </ul>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <header class="page-hero">
+      <div class="container">
+        <p class="verified-pill"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> last verified: July 2026</p>
+        <h1>Free tools for an engineering PhD</h1>
+        <p class="subtitle">
+          A curated toolbox I use and recommend — injection molding, additive manufacturing,
+          3D metrology, design of experiments (DoE), literature work and academic writing.
+          Every "free" claim below was checked against official sources; free tiers change,
+          so treat the date above as the expiry check.
+        </p>
+        <div class="hero-tags" style="margin-top:18px;">
+          <span class="tag">free <span style="opacity:.6">= fully free / open source</span></span>
+          <span class="tag" style="background:transparent; border:1px solid var(--border-strong); color:var(--text-2);">freemium <span style="opacity:.6">= usable free tier</span></span>
+          <span class="tag amber">edu <span style="opacity:.6">= free with university email</span></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="res-toolbar">
+      <div class="container res-toolbar-inner">
+        <input class="res-search" id="resSearch" type="search"
+               placeholder="> filter tools… (e.g. DoE, mesh, LaTeX, mold)" aria-label="Filter tools">
+        <div class="chip-row">
+          <a class="chip" href="#starter">starter kit</a>
+          <a class="chip" href="#cat-lit">literature</a>
+          <a class="chip" href="#cat-writing">writing</a>
+          <a class="chip" href="#cat-doe">DoE &amp; stats</a>
+          <a class="chip" href="#cat-cadfem">CAD &amp; FEM</a>
+          <a class="chip" href="#cat-mold">molding sim</a>
+          <a class="chip" href="#cat-metro">metrology &amp; AM</a>
+          <a class="chip" href="#cat-mat">materials</a>
+          <a class="chip" href="#cat-pub">publishing</a>
+          <a class="chip" href="#cat-fig">figures &amp; org</a>
+          <a class="chip" href="#cat-i40">Industry 4.0</a>
+          <a class="chip" href="#cat-gems">hidden gems</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════ STARTER KIT ═══════════ -->
+    <section class="res-cat" id="starter">
+      <div class="container">
+        <p class="cat-kicker">00 · Starter kit</p>
+        <h2>If you install only ten things</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.zotero.org">01 · Zotero 7 + Better BibTeX</a><span class="badge b-free">free</span></div>
+            <p>Reference manager for the whole thesis; stable citation keys and auto-updating .bib export for LaTeX.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.handsonmetrology.com/products/software/zeiss-inspect/">02 · ZEISS INSPECT free</a><span class="badge b-free">free tier</span></div>
+            <p>Ex-GOM Inspect: scan-vs-CAD deviation maps, mesh editing, sections, reports — the de facto standard in metrology papers.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.autodesk.com/education/free-software/moldflow-education-grant">03 · Moldflow Adviser (Education)</a><span class="badge b-edu">edu</span></div>
+            <p>The realistic free path to mold-filling simulation: 1-year renewable education license, material database included.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://cran.r-project.org/package=FrF2">04 · R: FrF2 + rsm + qcc</a><span class="badge b-free">free</span></div>
+            <p>The free Minitab replacement: fractional factorial DoE, response surfaces, control charts, Cp/Cpk.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://prepomax.fs.um.si">05 · PrePoMax + CalculiX</a><span class="badge b-free">free</span></div>
+            <p>Serious FEM on Windows with zero node limits — static, nonlinear and thermal studies, STEP import.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.freecad.org">06 · FreeCAD 1.1</a><span class="badge b-free">free</span></div>
+            <p>Parametric CAD with no restrictions, ever — parts, fixtures, drawings, plus an integrated FEM workbench.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.cloudcompare.org">07 · CloudCompare</a><span class="badge b-free">free</span></div>
+            <p>Point-cloud and mesh comparison (C2C/C2M), ICP registration, Python batch processing of scans.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.researchrabbit.ai">08 · ResearchRabbit + Semantic Scholar</a><span class="badge b-free">free</span></div>
+            <p>Literature discovery that stays free: collections, alerts, citation graphs, Zotero sync.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.overleaf.com">09 · Overleaf + local TeX Live</a><span class="badge b-freemium">freemium</span></div>
+            <p>Papers on Overleaf free tier; the thesis compiles locally (free tier now limits compiles to 10 s, 1 collaborator).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://zenodo.org">10 · Zenodo + Open Policy Finder</a><span class="badge b-free">free</span></div>
+            <p>Free DOIs for datasets, STL files and posters + journal self-archiving policies before you upload any PDF.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ LITERATURE ═══════════ -->
+    <section class="res-cat" id="cat-lit">
+      <div class="container">
+        <p class="cat-kicker">01 · Literature &amp; references</p>
+        <h2>Find, map and manage the literature</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.semanticscholar.org">Semantic Scholar</a><span class="badge b-free">free</span></div>
+            <p>Semantic search, TLDR summaries, citation graphs; free API for scripted searches.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://openalex.org">OpenAlex</a><span class="badge b-free">free</span></div>
+            <p>Open bibliometric database (CC0). API needs a free key since Feb 2026 — generous daily allowance.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.researchrabbit.ai">ResearchRabbit</a><span class="badge b-free">free</span></div>
+            <p>"Free forever" discovery: seed collections, weekly alerts, author networks, Zotero sync.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.connectedpapers.com">Connected Papers</a><span class="badge b-freemium">freemium</span></div>
+            <p>Visual graphs of prior and derivative works; 5 free graphs per month.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://elicit.com">Elicit</a><span class="badge b-freemium">freemium</span></div>
+            <p>AI-assisted screening and data extraction from papers; free Basic plan (no RIS/BIB export).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://scholar.google.com">Google Scholar + alerts</a><span class="badge b-free">free</span></div>
+            <p>The safety net: unlimited keyword and author alerts catch what curated databases miss.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.scopus.com">Scopus Preview</a><span class="badge b-freemium">freemium</span></div>
+            <p>Free without subscription: author profiles, h-index, CiteScore — verify target journal indexing and quartiles.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://core.ac.uk">CORE + BASE</a><span class="badge b-free">free</span></div>
+            <p>Open-access full text and European grey literature (theses, reports) — strong for metrology topics.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://unpaywall.org">Unpaywall</a><span class="badge b-free">free</span></div>
+            <p>Browser extension: one green button to the legal open-access version of paywalled papers.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.zotero.org">Zotero 7 + Better BibTeX</a><span class="badge b-free">free</span></div>
+            <p>Open-source reference manager; 300 MB file sync free (unlimited locally or via WebDAV).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.jabref.org">JabRef</a><span class="badge b-free">free</span></div>
+            <p>Native BibTeX editor — a clean backup workflow for the thesis .bib files.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://scite.ai">Scite</a><span class="badge b-warn">paid now</span></div>
+            <p>Supporting/contrasting citation analysis. No free plan anymore (7-day trial only) — listed so you don't plan around it.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ WRITING ═══════════ -->
+    <section class="res-cat" id="cat-writing">
+      <div class="container">
+        <p class="cat-kicker">02 · Writing</p>
+        <h2>Write and polish manuscripts</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.overleaf.com">Overleaf</a><span class="badge b-freemium">freemium</span></div>
+            <p>Collaborative LaTeX. Free tier (2026): unlimited projects but 10 s compile timeout and 1 collaborator — fine for papers, not the thesis.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.tug.org/texlive/">TeX Live + VS Code</a><span class="badge b-free">free</span></div>
+            <p>Local LaTeX with zero limits; same source as Overleaf. The thesis-safe plan B.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://typst.app">Typst</a><span class="badge b-freemium">freemium</span></div>
+            <p>Modern typesetting with instant compile; open-source compiler runs locally free, growing IEEE/Elsevier template pool.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://languagetool.org">LanguageTool</a><span class="badge b-freemium">freemium</span></div>
+            <p>Grammar/style checker (EN + RO): free web editor up to 10,000 characters per check; browser extension is premium-only now.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.writefull.com">Writefull</a><span class="badge b-freemium">freemium</span></div>
+            <p>Language feedback trained on scientific text, in Word and Overleaf; daily free quota — ask your library about an institutional license.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ DoE & STATS ═══════════ -->
+    <section class="res-cat" id="cat-doe">
+      <div class="container">
+        <p class="cat-kicker">03 · DoE &amp; statistics</p>
+        <h2>Design of experiments and process statistics</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://cran.r-project.org/package=FrF2">R: FrF2 + DoE.base + rsm + qcc</a><span class="badge b-free">free</span></div>
+            <p>Full and fractional factorials, Taguchi, response surface methodology, control charts and Cp/Cpk — the publishable Minitab replacement.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://pypi.org/project/pyDOE3/">Python: pyDOE3 + statsmodels</a><span class="badge b-free">free</span></div>
+            <p>Experimental designs (factorial, CCD, Box-Behnken, LHS) plus ANOVA/regression inside your data pipeline.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://jasp-stats.org">JASP</a><span class="badge b-free">free</span></div>
+            <p>Point-and-click statistics with publication-ready output; Quality Control module covers 2^k designs and capability.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.jamovi.org">jamovi</a><span class="badge b-free">free</span></div>
+            <p>SPSS-like GUI over R; community DoE module: factorial, Box-Behnken, CCD, mixture, Taguchi.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.gpower.hhu.de">G*Power</a><span class="badge b-free">free</span></div>
+            <p>Sample-size and power analysis before committing machine time to an experimental campaign.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CAD & FEM ═══════════ -->
+    <section class="res-cat" id="cat-cadfem">
+      <div class="container">
+        <p class="cat-kicker">04 · CAD &amp; FEM</p>
+        <h2>Model and simulate</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.freecad.org">FreeCAD 1.1</a><span class="badge b-free">free</span></div>
+            <p>Parametric CAD, unrestricted STEP/STL export, integrated FEM workbench; v1.1 improved assemblies and meshing.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.onshape.com/en/education/">Onshape EDU</a><span class="badge b-edu">edu</span></div>
+            <p>Cloud CAD; unlike the public free plan, education documents stay private — better for unpublished research.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://prepomax.fs.um.si">PrePoMax + CalculiX</a><span class="badge b-free">free</span></div>
+            <p>The fastest route to serious free FEM on Windows: portable GUI, STEP import, Netgen/Gmsh meshing.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.ansys.com/academic/students/ansys-student">Ansys Student 2026</a><span class="badge b-edu">edu</span></div>
+            <p>Mechanical, Fluent, Polyflow, optiSLang — free and renewable; limits: 128 K nodes structural, 1 M cells fluids.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.3ds.com/edu/education/students/solutions/abaqus-le">Abaqus Learning Edition</a><span class="badge b-edu">edu</span></div>
+            <p>Free but capped at 1,000 nodes — for learning the workflow, not for thesis-scale models.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://code-aster.org">Code_Aster / Elmer FEM</a><span class="badge b-free">free</span></div>
+            <p>Advanced open-source multiphysics (nonlinear, thermo-mechanical); steeper learning curve, Linux-native.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ MOLDING SIM ═══════════ -->
+    <section class="res-cat" id="cat-mold">
+      <div class="container">
+        <p class="cat-kicker">05 · Injection molding simulation</p>
+        <h2>Mold-filling simulation — the honest picture</h2>
+        <div class="callout">
+          <strong>Honest note (July 2026):</strong> there is no mold-filling simulator that is
+          simultaneously free-forever, actively maintained and industrial-grade. The realistic
+          free route for research is an education license; the open-source route exists but is
+          aging. Both are listed below.
+        </div>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.autodesk.com/education/free-software/moldflow-education-grant">Moldflow Adviser Ultimate (EDU)</a><span class="badge b-edu">edu</span></div>
+            <p>Filling, packing, weld lines, air traps + rheological material database (Cross-WLF, pvT). Free 1-year education license, renewable while enrolled.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://github.com/krebeljk/openInjMoldSim">openInjMoldSim (OpenFOAM)</a><span class="badge b-free">free</span></div>
+            <p>Open-source filling/packing solver (GPL-3), citable and modifiable — but unmaintained since Nov 2021; for principle studies.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.ansys.com/academic/students/ansys-student">Ansys Polyflow (in Student)</a><span class="badge b-edu">edu</span></div>
+            <p>Viscoelastic polymer flows (extrusion, blow molding) — not dedicated mold filling, but free and legitimate.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.moldex3d.com">Moldex3D</a><span class="badge b-warn">trial only</span></div>
+            <p>No public student edition; 30-day trial plus free e-learning ("Moldex3D University") for training.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ METROLOGY & AM ═══════════ -->
+    <section class="res-cat" id="cat-metro">
+      <div class="container">
+        <p class="cat-kicker">06 · 3D metrology &amp; additive manufacturing</p>
+        <h2>Measure, inspect, print</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.handsonmetrology.com/products/software/zeiss-inspect/">ZEISS INSPECT free</a><span class="badge b-free">free tier</span></div>
+            <p>Scan-vs-CAD colour deviation maps, alignments, mesh editing, sections and reports; advanced GD&amp;T filters only in the pro trial.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.cloudcompare.org">CloudCompare</a><span class="badge b-free">free</span></div>
+            <p>C2C/C2M distances, ICP registration, scalar fields; CloudComPy scripts batch-process whole scan campaigns.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.meshlab.net">MeshLab</a><span class="badge b-free">free</span></div>
+            <p>Mesh cleanup, repair and decimation before inspection or printing.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.prusa3d.com/page/prusaslicer_424/">PrusaSlicer</a><span class="badge b-free">free</span></div>
+            <p>Reference slicer for MEX/FDM studies — clean parameter control for DoE on printing parameters.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://github.com/SoftFever/OrcaSlicer">OrcaSlicer</a><span class="badge b-free">free</span></div>
+            <p>Built-in systematic calibrations (flow, pressure advance, temperature towers) — ideal for printer characterization.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://exiftool.org">ExifTool</a><span class="badge b-free">free</span></div>
+            <p>Read/clean metadata of images and PDFs before manuscript submission.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ MATERIALS ═══════════ -->
+    <section class="res-cat" id="cat-mat">
+      <div class="container">
+        <p class="cat-kicker">07 · Polymer material data</p>
+        <h2>Datasheets you can actually compare</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://www.campusplastics.com">CAMPUS Plastics</a><span class="badge b-free">free</span></div>
+            <p>~4,600 grades from 27 producers, strictly ISO 10350/11403 data — comparable single- and multi-point curves (PA, PP, PBT, PEEK…).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.ulprospector.com/plastics/en">UL Prospector</a><span class="badge b-freemium">freemium</span></div>
+            <p>The widest commercial-grade coverage (43k+ datasheets); free account with viewing limits.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.matweb.com">MatWeb</a><span class="badge b-freemium">freemium</span></div>
+            <p>Quick generic property lookup across material families; free with registration.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PUBLISHING ═══════════ -->
+    <section class="res-cat" id="cat-pub">
+      <div class="container">
+        <p class="cat-kicker">08 · Publishing, data &amp; integrity</p>
+        <h2>Publish right, share data, stay clean</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://openpolicyfinder.jisc.ac.uk">Open Policy Finder</a><span class="badge b-free">free</span></div>
+            <p>Ex-Sherpa Romeo: check each journal's self-archiving policy before uploading any PDF to a personal site.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://doaj.org">DOAJ + Think.Check.Submit</a><span class="badge b-free">free</span></div>
+            <p>Verify open-access journals are legitimate; checklist against predatory venues.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://orcid.org">ORCID + Crossref</a><span class="badge b-free">free</span></div>
+            <p>Researcher ID (displayed as full URL) + DOI metadata verification for reference lists.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://zenodo.org">Zenodo</a><span class="badge b-free">free</span></div>
+            <p>CERN-hosted repository: free DOIs and versioning for datasets, STL/G-code, posters — up to 50 GB per record.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://osf.io">OSF</a><span class="badge b-free">free</span></div>
+            <p>Organize the whole doctoral project, preregister studies; 50 GB per public project.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://engrxiv.org">engrXiv</a><span class="badge b-free">free</span></div>
+            <p>Engineering-dedicated preprint server with active moderation.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://web.archive.org">Wayback Machine + archive.today</a><span class="badge b-free">free</span></div>
+            <p>Archive every web page you cite (datasheets, product pages) — the anti-link-rot insurance for the thesis.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://29a.ch/photo-forensics/">Forensically + TinEye</a><span class="badge b-free">free</span></div>
+            <p>Clone detection / error level analysis and reverse image search — audit your composed figures before submission.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FIGURES & ORG ═══════════ -->
+    <section class="res-cat" id="cat-fig">
+      <div class="container">
+        <p class="cat-kicker">09 · Figures, posters &amp; organization</p>
+        <h2>Make it look right, keep it on track</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://inkscape.org">Inkscape + GIMP</a><span class="badge b-free">free</span></div>
+            <p>Vector figures (process schematics, experimental setups) and micrograph processing — journal-DPI exports, no watermarks.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.drawio.com">draw.io / diagrams.net</a><span class="badge b-free">free</span></div>
+            <p>Flowcharts and methodology diagrams, no account needed, exports SVG/PDF.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://veusz.github.io">Veusz / matplotlib / TikZ</a><span class="badge b-free">free</span></div>
+            <p>Publication plots: GUI (Veusz), scripted (matplotlib), or typographically native in LaTeX (TikZ).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.libreoffice.org">LibreOffice Impress/Draw</a><span class="badge b-free">free</span></div>
+            <p>A0 conference posters and presentations, print-quality PDF export. (Note: Canva's education plan excludes universities.)</p></div>
+          <div class="tool"><div class="t-head"><a href="https://osf.io/ef53g/">Better Poster templates</a><span class="badge b-free">free</span></div>
+            <p>Poster formats engineered for legibility at conference distance.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.notion.com/product/notion-for-education">Notion Education Plus</a><span class="badge b-edu">edu</span></div>
+            <p>Free Plus plan with a university email: paper pipeline, experiment log, deadlines.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://obsidian.md">Obsidian</a><span class="badge b-free">free</span></div>
+            <p>Local Markdown knowledge base (free even commercially since 2025); links to Zotero via community plugins.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ INDUSTRY 4.0 ═══════════ -->
+    <section class="res-cat" id="cat-i40">
+      <div class="container">
+        <p class="cat-kicker">10 · Industry 4.0 &amp; digital twins</p>
+        <h2>Instrument the process</h2>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://nodered.org">Node-RED</a><span class="badge b-free">free</span></div>
+            <p>Low-code data flows from machines and sensors (OPC UA, MQTT) — wiring a lab cell without custom code.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://grafana.com/oss/">Grafana OSS + InfluxDB OSS</a><span class="badge b-free">free</span></div>
+            <p>Time-series storage and live dashboards for process data (temperatures, injection pressures).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://eclipse.dev/ditto/">Eclipse Ditto</a><span class="badge b-free">free</span></div>
+            <p>Actively maintained open-source digital twin framework (v3.9, 2026).</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.open62541.org">open62541 / Prosys OPC UA Simulator</a><span class="badge b-free">free</span></div>
+            <p>Open-source OPC UA stack + freeware simulation server for Industry 4.0 demonstrators.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ HIDDEN GEMS ═══════════ -->
+    <section class="res-cat" id="cat-gems" style="padding-bottom:64px;">
+      <div class="container">
+        <p class="cat-kicker">11 · Hidden gems</p>
+        <h2>Unexpected finds that earn their place</h2>
+        <p class="cat-note">Discovered while auditing a large OSINT tool list — most of it is irrelevant
+           to research, but these few are quietly excellent for academic work.</p>
+        <div class="tool-grid">
+          <div class="tool"><div class="t-head"><a href="https://worldwide.espacenet.com">Espacenet</a><span class="badge b-free">free</span></div>
+            <p>~150 million patents (EPO): state of the art for mold tooling, conformal cooling and metrology fixtures — patents often precede papers.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://filmot.com">Filmot</a><span class="badge b-free">free</span></div>
+            <p>Searches inside YouTube subtitles: find the exact minute a term is discussed in conference talks and vendor webinars.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://pypi.org/project/waybackpy/">waybackpy</a><span class="badge b-free">free</span></div>
+            <p>Python: archive every URL in your bibliography to the Wayback Machine and get permanent links back.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.talkwalker.com/alerts">Talkwalker Alerts</a><span class="badge b-free">free</span></div>
+            <p>Field monitoring alongside Google Alerts — catches industry blogs and niche press the other misses.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://datasetsearch.research.google.com">Google Dataset Search</a><span class="badge b-free">free</span></div>
+            <p>Find published datasets (process parameters, point clouds) to benchmark against your own.</p></div>
+          <div class="tool"><div class="t-head"><a href="https://www.deepl.com">DeepL</a><span class="badge b-freemium">freemium</span></div>
+            <p>Strong technical translation — unlocks the German injection molding literature (Kunststoffe).</p></div>
+        </div>
+        <p class="no-results" id="noRes">&gt; no tools match your filter_</p>
+        <div class="callout" style="margin-top:40px;">
+          Free tiers change without notice. This page was last verified in <strong>July 2026</strong> —
+          if you find something outdated, <a href="index.html#contact">tell me</a> and I'll fix it.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Your Name · Built for open science.</p>
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="links.html">Links</a>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  (function () {
+    "use strict";
+    var input = document.getElementById("resSearch");
+    var noRes = document.getElementById("noRes");
+    if (!input) return;
+    var tools = Array.prototype.slice.call(document.querySelectorAll(".tool"));
+    var cats = Array.prototype.slice.call(document.querySelectorAll(".res-cat"));
+    input.addEventListener("input", function () {
+      var q = input.value.trim().toLowerCase();
+      var any = false;
+      tools.forEach(function (t) {
+        var hit = !q || t.textContent.toLowerCase().indexOf(q) !== -1;
+        t.style.display = hit ? "" : "none";
+        if (hit) any = true;
+      });
+      cats.forEach(function (c) {
+        var visible = c.querySelectorAll(".tool");
+        var shown = Array.prototype.some.call(visible, function (t) { return t.style.display !== "none"; });
+        c.style.display = (shown || visible.length === 0) ? "" : "none";
+      });
+      if (noRes) noRes.style.display = any ? "none" : "block";
+    });
+  })();
+  </script>
+</body>
+</html>
