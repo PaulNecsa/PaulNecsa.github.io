@@ -1,48 +1,69 @@
-<mxfile host="app.diagrams.net" agent="Knowledge Hub source diagrams" version="24.0.0">
-  <diagram id="im-machine" name="Injection molding machine">
-    <mxGraphModel dx="1100" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="500" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Knowledge Hub — editable sources v2" version="24.0.0">
+  <diagram id="im-machine" name="1 · Injection molding machine">
+    <mxGraphModel dx="1200" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="t1" value="Injection molding machine (schematic) — editable source for Fig. 1" style="text;html=1;fontSize=14;fontStyle=1;align=left;" vertex="1" parent="1"><mxGeometry x="40" y="20" width="560" height="30" as="geometry" /></mxCell>
-        <mxCell id="hop" value="Hopper" style="shape=trapezoid;perimeter=trapezoidPerimeter;direction=south;flipV=1;html=1;fillColor=none;strokeColor=#22AACC;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="150" y="90" width="90" height="70" as="geometry" /></mxCell>
-        <mxCell id="barrel" value="Barrel — reciprocating screw inside (feed / compression / metering)" style="rounded=1;html=1;fillColor=none;strokeColor=#22AACC;strokeWidth=2;verticalAlign=bottom;spacingBottom=6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="120" y="160" width="420" height="70" as="geometry" /></mxCell>
-        <mxCell id="h1" value="" style="rounded=1;html=1;fillColor=none;strokeColor=#E89A20;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="300" y="152" width="18" height="86" as="geometry" /></mxCell>
-        <mxCell id="h2" value="" style="rounded=1;html=1;fillColor=none;strokeColor=#E89A20;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="360" y="152" width="18" height="86" as="geometry" /></mxCell>
-        <mxCell id="h3" value="Heater bands" style="rounded=1;html=1;fillColor=none;strokeColor=#E89A20;strokeWidth=2;verticalAlign=top;verticalLabelPosition=top;labelPosition=center;align=center;fontSize=11;fontColor=#E89A20;" vertex="1" parent="1"><mxGeometry x="420" y="152" width="18" height="86" as="geometry" /></mxCell>
-        <mxCell id="noz" value="Nozzle" style="shape=triangle;html=1;fillColor=none;strokeColor=#22AACC;strokeWidth=2;fontSize=11;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1"><mxGeometry x="540" y="175" width="40" height="40" as="geometry" /></mxCell>
-        <mxCell id="fp" value="Fixed platen" style="rounded=0;html=1;fillColor=none;strokeColor=#888888;strokeWidth=2;horizontal=0;fontSize=11;" vertex="1" parent="1"><mxGeometry x="590" y="110" width="24" height="180" as="geometry" /></mxCell>
-        <mxCell id="mh1" value="Mold half (fixed) — sprue" style="rounded=0;html=1;fillColor=none;strokeColor=#666666;strokeWidth=2;fontSize=10;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="614" y="130" width="55" height="140" as="geometry" /></mxCell>
-        <mxCell id="mh2" value="Mold half (moving) — cavity + part" style="rounded=0;html=1;fillColor=none;strokeColor=#666666;strokeWidth=2;fontSize=10;verticalAlign=top;" vertex="1" parent="1"><mxGeometry x="669" y="130" width="55" height="140" as="geometry" /></mxCell>
-        <mxCell id="mp" value="Moving platen" style="rounded=0;html=1;fillColor=none;strokeColor=#888888;strokeWidth=2;horizontal=0;fontSize=11;" vertex="1" parent="1"><mxGeometry x="724" y="110" width="24" height="180" as="geometry" /></mxCell>
-        <mxCell id="clamp" value="Clamping unit" style="rounded=1;html=1;fillColor=none;strokeColor=#666666;strokeWidth=2;fontSize=11;" vertex="1" parent="1"><mxGeometry x="800" y="170" width="90" height="60" as="geometry" /></mxCell>
-        <mxCell id="e1" value="clamping force" style="endArrow=block;html=1;strokeColor=#E89A20;strokeWidth=2;fontSize=10;fontColor=#E89A20;" edge="1" parent="1" source="clamp" target="mp"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e2" value="melt" style="endArrow=block;html=1;strokeColor=#E89A20;strokeWidth=2;fontSize=10;fontColor=#E89A20;" edge="1" parent="1" source="noz" target="mh1"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="tie1" value="" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=2;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="590" y="118" as="sourcePoint" /><mxPoint x="748" y="118" as="targetPoint" /></mxGeometry></mxCell>
-        <mxCell id="tie2" value="tie bars" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=2;fontSize=10;fontColor=#888888;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="590" y="282" as="sourcePoint" /><mxPoint x="748" y="282" as="targetPoint" /></mxGeometry></mxCell>
-        <mxCell id="cyc" value="Cycle: plasticating → filling → packing → cooling → ejection" style="text;html=1;fontSize=11;align=left;fontColor=#888888;" vertex="1" parent="1"><mxGeometry x="120" y="320" width="480" height="24" as="geometry" /></mxCell>
+        <mxCell id="ti" value="Injection molding machine — schematic (material flows LEFT → RIGHT) · editable source for Fig. 1 · CC BY 4.0 Paul Necsa" style="text;html=1;fontSize=13;fontStyle=1;align=left;fontColor=#37474F;" vertex="1" parent="1"><mxGeometry x="60" y="30" width="900" height="30" as="geometry" /></mxCell>
+
+        <mxCell id="hop" value="1 · Hopper&#10;(feedstock pellets)" style="shape=trapezoid;perimeter=trapezoidPerimeter;direction=south;flipV=1;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;verticalAlign=middle;spacing=4;" vertex="1" parent="1"><mxGeometry x="200" y="120" width="120" height="90" as="geometry" /></mxCell>
+
+        <mxCell id="barrel" value="2 · Barrel — heated cylinder&#10;4 · reciprocating screw inside" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="120" y="230" width="480" height="90" as="geometry" /></mxCell>
+        <mxCell id="hb1" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#78909C;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="260" y="220" width="26" height="110" as="geometry" /></mxCell>
+        <mxCell id="hb2" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#78909C;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="360" y="220" width="26" height="110" as="geometry" /></mxCell>
+        <mxCell id="hb3" value="3 · Heater bands" style="rounded=0;html=1;fillColor=none;strokeColor=#78909C;strokeWidth=2;fontSize=11;fontColor=#78909C;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;" vertex="1" parent="1"><mxGeometry x="460" y="220" width="26" height="110" as="geometry" /></mxCell>
+
+        <mxCell id="zf" value="feed" style="text;html=1;fontSize=10;align=center;fontColor=#90A4AE;" vertex="1" parent="1"><mxGeometry x="140" y="335" width="120" height="20" as="geometry" /></mxCell>
+        <mxCell id="zc" value="compression" style="text;html=1;fontSize=10;align=center;fontColor=#90A4AE;" vertex="1" parent="1"><mxGeometry x="300" y="335" width="140" height="20" as="geometry" /></mxCell>
+        <mxCell id="zm" value="metering" style="text;html=1;fontSize=10;align=center;fontColor=#90A4AE;" vertex="1" parent="1"><mxGeometry x="470" y="335" width="120" height="20" as="geometry" /></mxCell>
+
+        <mxCell id="noz" value="5 · Nozzle" style="shape=triangle;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1"><mxGeometry x="600" y="250" width="50" height="50" as="geometry" /></mxCell>
+
+        <mxCell id="mfix" value="6 · Sprue → (fixed half)" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=10;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="680" y="180" width="90" height="190" as="geometry" /></mxCell>
+        <mxCell id="mmov" value="7 · Cavity — molded part (moving half)" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=10;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="770" y="180" width="90" height="190" as="geometry" /></mxCell>
+        <mxCell id="cool" value="8 · cooling channels ○ ○" style="text;html=1;fontSize=10;align=center;fontColor=#78909C;" vertex="1" parent="1"><mxGeometry x="690" y="380" width="160" height="20" as="geometry" /></mxCell>
+        <mxCell id="pline" value="parting line" style="endArrow=none;dashed=1;html=1;strokeColor=#90A4AE;strokeWidth=1.5;fontSize=10;fontColor=#90A4AE;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="770" y="160" as="sourcePoint" /><mxPoint x="770" y="410" as="targetPoint" /></mxGeometry></mxCell>
+
+        <mxCell id="mp" value="9 · Moving platen" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;horizontal=0;fontSize=11;" vertex="1" parent="1"><mxGeometry x="860" y="160" width="30" height="230" as="geometry" /></mxCell>
+        <mxCell id="clamp" value="Clamping unit" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;" vertex="1" parent="1"><mxGeometry x="960" y="240" width="110" height="70" as="geometry" /></mxCell>
+
+        <mxCell id="tb1" value="tie bar" style="endArrow=none;html=1;strokeColor=#90A4AE;strokeWidth=2;fontSize=10;fontColor=#90A4AE;verticalAlign=top;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="680" y="150" as="sourcePoint" /><mxPoint x="1000" y="150" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="tb2" value="tie bar" style="endArrow=none;html=1;strokeColor=#90A4AE;strokeWidth=2;fontSize=10;fontColor=#90A4AE;verticalAlign=bottom;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="680" y="400" as="sourcePoint" /><mxPoint x="1000" y="400" as="targetPoint" /></mxGeometry></mxCell>
+
+        <mxCell id="fH" style="endArrow=block;html=1;strokeColor=#37474F;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.35;entryY=0;" edge="1" parent="1" source="hop" target="barrel"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="fMelt" value="melt flow" style="endArrow=block;html=1;strokeColor=#00838F;strokeWidth=2.5;fontSize=11;fontColor=#00838F;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="barrel" target="noz"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="fMelt2" style="endArrow=block;html=1;strokeColor=#00838F;strokeWidth=2.5;exitX=1;exitY=0.5;entryX=0;entryY=0.55;" edge="1" parent="1" source="noz" target="mfix"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="fClamp" value="F clamp" style="endArrow=block;html=1;strokeColor=#37474F;strokeWidth=2.5;fontSize=11;fontColor=#37474F;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="clamp" target="mp"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="cyc" value="Cycle: plasticating → filling → packing → cooling → ejection   ·   channel depth decreases from feed to metering" style="text;html=1;fontSize=11;align=left;fontColor=#78909C;" vertex="1" parent="1"><mxGeometry x="120" y="450" width="760" height="24" as="geometry" /></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="classification" name="Polymer classification">
-    <mxGraphModel dx="1100" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="520" math="0" shadow="0">
+  <diagram id="classification" name="2 · Polymer classification">
+    <mxGraphModel dx="1200" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="620" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="root" value="POLYMERS" style="rounded=1;html=1;fillColor=none;strokeColor=#22AACC;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="470" y="40" width="140" height="44" as="geometry" /></mxCell>
-        <mxCell id="tp" value="THERMOPLASTICS&#10;soften on heating — remeltable" style="rounded=1;html=1;fillColor=none;strokeColor=#22AACC;strokeWidth=2;fontSize=11;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="140" y="150" width="200" height="60" as="geometry" /></mxCell>
-        <mxCell id="ts" value="THERMOSETS&#10;densely cross-linked — cannot remelt" style="rounded=1;html=1;fillColor=none;strokeColor=#666666;strokeWidth=2;fontSize=11;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="450" y="150" width="200" height="60" as="geometry" /></mxCell>
-        <mxCell id="el" value="ELASTOMERS&#10;lightly cross-linked — large elastic strains" style="rounded=1;html=1;fillColor=none;strokeColor=#E89A20;strokeWidth=2;fontSize=11;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="760" y="150" width="200" height="60" as="geometry" /></mxCell>
-        <mxCell id="am" value="Amorphous&#10;only Tg · transparent&#10;PC · PMMA · ABS · PS" style="rounded=1;html=1;fillColor=none;strokeColor=#888888;strokeWidth=1.5;fontSize=10.5;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="70" y="280" width="160" height="70" as="geometry" /></mxCell>
-        <mxCell id="sc" value="Semi-crystalline&#10;Tg + distinct Tm&#10;PP · PE · PA · PET · PEEK" style="rounded=1;html=1;fillColor=none;strokeColor=#888888;strokeWidth=1.5;fontSize=10.5;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="250" y="280" width="170" height="70" as="geometry" /></mxCell>
-        <mxCell id="tse" value="phenolics (Bakelite, 1909) · epoxy · melamine" style="text;html=1;fontSize=10.5;align=center;fontColor=#888888;" vertex="1" parent="1"><mxGeometry x="450" y="280" width="200" height="30" as="geometry" /></mxCell>
-        <mxCell id="ele" value="vulcanized rubber (Goodyear, 1844) · silicones" style="text;html=1;fontSize=10.5;align=center;fontColor=#E89A20;" vertex="1" parent="1"><mxGeometry x="760" y="280" width="200" height="30" as="geometry" /></mxCell>
-        <mxCell id="c1" style="endArrow=none;html=1;strokeColor=#888888;" edge="1" parent="1" source="root" target="tp"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="c2" style="endArrow=none;html=1;strokeColor=#888888;" edge="1" parent="1" source="root" target="ts"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="c3" style="endArrow=none;html=1;strokeColor=#888888;" edge="1" parent="1" source="root" target="el"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="c4" style="endArrow=none;html=1;strokeColor=#888888;" edge="1" parent="1" source="tp" target="am"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="c5" style="endArrow=none;html=1;strokeColor=#888888;" edge="1" parent="1" source="tp" target="sc"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="c6" value="TPE — thermoplastic elastomers" style="endArrow=none;dashed=1;html=1;strokeColor=#E89A20;fontSize=10;fontColor=#E89A20;curved=1;" edge="1" parent="1" source="tp" target="el"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ti2" value="Polymer classification by thermo-mechanical behavior · editable source for Fig. 2 · CC BY 4.0 Paul Necsa" style="text;html=1;fontSize=13;fontStyle=1;align=left;fontColor=#37474F;" vertex="1" parent="1"><mxGeometry x="60" y="30" width="860" height="30" as="geometry" /></mxCell>
+
+        <mxCell id="root" value="POLYMERS" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=13;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="490" y="80" width="190" height="50" as="geometry" /></mxCell>
+
+        <mxCell id="tp" value="THERMOPLASTICS&#10;—&#10;soften on heating · remeltable&#10;basis of molding &amp; extrusion" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;whiteSpace=wrap;spacing=6;" vertex="1" parent="1"><mxGeometry x="120" y="210" width="250" height="90" as="geometry" /></mxCell>
+        <mxCell id="ts" value="THERMOSETS&#10;—&#10;cure into a permanent network&#10;cannot be remelted" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;whiteSpace=wrap;spacing=6;" vertex="1" parent="1"><mxGeometry x="460" y="210" width="250" height="90" as="geometry" /></mxCell>
+        <mxCell id="el" value="ELASTOMERS&#10;—&#10;lightly cross-linked networks&#10;large recoverable strains" style="rounded=0;html=1;fillColor=none;strokeColor=#37474F;strokeWidth=2;fontSize=11;whiteSpace=wrap;spacing=6;" vertex="1" parent="1"><mxGeometry x="800" y="210" width="250" height="90" as="geometry" /></mxCell>
+
+        <mxCell id="am" value="amorphous&#10;—&#10;only Tg · transparent&#10;lower, isotropic shrinkage&#10;&#10;PC · PMMA · ABS · PS" style="rounded=0;html=1;fillColor=none;strokeColor=#78909C;strokeWidth=1.5;fontSize=10.5;whiteSpace=wrap;spacing=6;" vertex="1" parent="1"><mxGeometry x="80" y="380" width="200" height="120" as="geometry" /></mxCell>
+        <mxCell id="sc" value="semi-crystalline&#10;—&#10;Tg + distinct Tm&#10;higher, anisotropic shrinkage&#10;&#10;PP · PE · PA · PET · PEEK" style="rounded=0;html=1;fillColor=none;strokeColor=#00838F;strokeWidth=2.5;fontSize=10.5;whiteSpace=wrap;spacing=6;" vertex="1" parent="1"><mxGeometry x="310" y="380" width="200" height="120" as="geometry" /></mxCell>
+        <mxCell id="scTag" value="← research focus" style="text;html=1;fontSize=10;fontColor=#00838F;align=left;" vertex="1" parent="1"><mxGeometry x="520" y="385" width="130" height="20" as="geometry" /></mxCell>
+
+        <mxCell id="tse" value="phenolics (Bakelite, Baekeland 1909) · epoxy · melamine" style="text;html=1;fontSize=10.5;align=center;fontColor=#78909C;" vertex="1" parent="1"><mxGeometry x="440" y="320" width="290" height="20" as="geometry" /></mxCell>
+        <mxCell id="ele" value="vulcanized rubber (Goodyear 1844) · silicones" style="text;html=1;fontSize=10.5;align=center;fontColor=#78909C;" vertex="1" parent="1"><mxGeometry x="790" y="320" width="270" height="20" as="geometry" /></mxCell>
+
+        <mxCell id="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#78909C;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="root" target="tp"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#78909C;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="root" target="ts"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#78909C;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="root" target="el"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#78909C;strokeWidth=1.5;exitX=0.35;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="tp" target="am"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#78909C;strokeWidth=1.5;exitX=0.65;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="tp" target="sc"><mxGeometry relative="1" as="geometry" /></mxCell>
       </root>
     </mxGraphModel>
   </diagram>

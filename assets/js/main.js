@@ -107,6 +107,95 @@
     });
   });
 
+  /* ---------- Digital twin: particle assembly (hero) ---------- */
+  var tc = document.getElementById("twinCanvas");
+  if (tc && tc.getContext) {
+    var tctx = tc.getContext("2d");
+    var TW = tc.width, TH = tc.height;
+    var statusEl = document.getElementById("twinStatus");
+    var NAME = "Paul Necsa", TOTAL_PTS = 0;
+
+    function cssColor(name, fallback) {
+      var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+      return v || fallback;
+    }
+    var colTeal = cssColor("--accent", "#2fb9a9");
+    var colGold = cssColor("--accent-2", "#c9a96a");
+
+    var off = document.createElement("canvas");
+    off.width = TW; off.height = TH;
+    var octx = off.getContext("2d");
+    octx.fillStyle = "#ffffff";
+    octx.font = "700 84px ui-monospace, Consolas, 'Cascadia Code', monospace";
+    octx.textBaseline = "middle";
+    octx.fillText(NAME, 8, TH / 2);
+    var data = octx.getImageData(0, 0, TW, TH).data;
+    var targets = [];
+    for (var py = 0; py < TH; py += 5) {
+      for (var px = 0; px < TW; px += 5) {
+        if (data[(py * TW + px) * 4 + 3] > 128) targets.push([px, py]);
+      }
+    }
+    TOTAL_PTS = targets.length;
+    var parts = targets.map(function (t) {
+      return { x: Math.random() * TW, y: Math.random() * TH,
+               tx: t[0], ty: t[1], g: Math.random() < 0.12 };
+    });
+
+    function drawFinal() {
+      tctx.clearRect(0, 0, TW, TH);
+      parts.forEach(function (q) {
+        tctx.fillStyle = q.g ? colGold : colTeal;
+        tctx.fillRect(q.tx, q.ty, 3, 3);
+      });
+      if (statusEl) statusEl.textContent = "twin.sync — live · " + TOTAL_PTS.toLocaleString("en-US") + " pts · Δ 0.02 mm";
+    }
+
+    if (reduced) {
+      drawFinal();
+    } else {
+      var DUR = 3200, HOLD = 2800, t0 = null;
+      var frame = function (ts) {
+        if (t0 === null) t0 = ts;
+        var el = (ts - t0) % (DUR + HOLD);
+        var p = Math.min(el / DUR, 1);
+        var e = 1 - Math.pow(1 - p, 3);
+        if (el < 40 && ts - t0 > DUR) {
+          colTeal = cssColor("--accent", "#2fb9a9");
+          colGold = cssColor("--accent-2", "#c9a96a");
+          parts.forEach(function (q) { q.x = Math.random() * TW; q.y = Math.random() * TH; });
+        }
+        tctx.clearRect(0, 0, TW, TH);
+        parts.forEach(function (q) {
+          var x = q.x + (q.tx - q.x) * e, y = q.y + (q.ty - q.y) * e;
+          tctx.fillStyle = q.g ? colGold : colTeal;
+          tctx.globalAlpha = 0.35 + 0.65 * e;
+          tctx.fillRect(x, y, 3, 3);
+        });
+        tctx.globalAlpha = 1;
+        if (statusEl) {
+          statusEl.textContent = p < 1
+            ? "twin.assemble — " + Math.round(p * 100) + "% · " + Math.round(e * TOTAL_PTS).toLocaleString("en-US") + " pts"
+            : "twin.sync — live · " + TOTAL_PTS.toLocaleString("en-US") + " pts · Δ 0.02 mm";
+        }
+        requestAnimationFrame(frame);
+      };
+      requestAnimationFrame(frame);
+    }
+  }
+
+  /* ---------- Visitor telemetry (GoatCounter) ---------- */
+  var gcEl = document.getElementById("gcCount");
+  if (gcEl && window.fetch) {
+    fetch("https://paulnecsa.goatcounter.com/counter/TOTAL.json")
+      .then(function (r) { if (!r.ok) { throw new Error(String(r.status)); } return r.json(); })
+      .then(function (d) { gcEl.textContent = d.count; })
+      .catch(function () {
+        var p = gcEl.closest(".telemetry");
+        if (p) { p.innerHTML = '<span class="dt-dot" aria-hidden="true"></span>twin.telemetry — online · cookie-free'; }
+      });
+  }
+
   /* ---------- Footer year ---------- */
   document.querySelectorAll("#year").forEach(function (y) {
     y.textContent = String(new Date().getFullYear());
